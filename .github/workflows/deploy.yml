@@ -32,7 +32,6 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_deploy
           chmod 600 ~/.ssh/id_deploy
-          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
       - name: Rsync site to VPS
         run: |
@@ -41,5 +40,5 @@ jobs:
             --exclude='.github' \
             --exclude='*.md' \
             --exclude='deploy-lp.sh' \
-            -e "ssh -i ~/.ssh/id_deploy" \
+            -e "ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=15 -i ~/.ssh/id_deploy" \
             ./ "$VPS_USER@$VPS_HOST:$REMOTE_PATH/"
