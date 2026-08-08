@@ -1,0 +1,45 @@
+name: Deploy LP to VPS
+
+# Syncs the static landing page to the production VPS web root on every push to
+# main, and on manual dispatch.
+#
+# Required repository secret (Settings -> Secrets and variables -> Actions):
+#   VPS_SSH_KEY  - a private SSH key whose public half is in the VPS's
+#                  /root/.ssh/authorized_keys.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-lp
+  cancel-in-progress: true
+
+env:
+  VPS_HOST: 76.13.114.85
+  VPS_USER: root
+  REMOTE_PATH: /var/www/nexoquote.com
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Rsync site to VPS
+        run: |
+          rsync -avz \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='*.md' \
+            --exclude='deploy-lp.sh' \
+            -e "ssh -i ~/.ssh/id_deploy" \
+            ./ "$VPS_USER@$VPS_HOST:$REMOTE_PATH/"
