@@ -19,7 +19,11 @@ concurrency:
 env:
   VPS_HOST: 76.13.114.85
   VPS_USER: root
-  REMOTE_PATH: /var/www/nexoquote.com
+  # nginx's actual document root for nexoquote.com (CloudPanel-managed,
+  # owned by the `nexoquote` system user) — NOT /var/www/nexoquote.com,
+  # which exists but is never read by nginx. Verified directly against
+  # /etc/nginx/sites-enabled/nexoquote.com.conf on the VPS.
+  REMOTE_PATH: /home/nexoquote/htdocs/nexoquote.com
 
 jobs:
   deploy:
@@ -32,7 +36,6 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_deploy
           chmod 600 ~/.ssh/id_deploy
-          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
       - name: Rsync site to VPS
         run: |
@@ -41,5 +44,10 @@ jobs:
             --exclude='.github' \
             --exclude='*.md' \
             --exclude='deploy-lp.sh' \
-            -e "ssh -i ~/.ssh/id_deploy" \
+            -e "ssh -o StrictHostKeyChecking=accept-new -o ConnectTimeout=15 -i ~/.ssh/id_deploy" \
             ./ "$VPS_USER@$VPS_HOST:$REMOTE_PATH/"
+
+      - name: Fix ownership after sync
+        run: |
+          ssh -o StrictHostKeyChecking=accept-new -i ~/.ssh/id_deploy "$VPS_USER@$VPS_HOST" \
+            "chown -R nexoquote:nexoquote '$REMOTE_PATH'"
