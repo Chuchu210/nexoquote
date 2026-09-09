@@ -1,94 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="theme-color" content="#fffaf2" />
-<meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1d4f73" />
+<meta name="robots" content="index,follow" />
 <meta name="facebook-domain-verification" content="h7q5fjwydy31m8wq256s4yy89nxoa4" />
-
 <title>Nexo Quote – Drivers Over 50 Are Quietly Cutting Their Car Insurance Bills in 2026</title>
 <meta name="description" content="A new 2026 program is helping U.S. drivers — especially those over 50 — pay less for car insurance. Answer a few short questions to see if you qualify." />
-
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Nexo Quote – Drivers Over 50 Are Quietly Cutting Their Car Insurance Bills in 2026" />
 <meta property="og:description" content="See if you qualify for the new 2026 program. Free and no obligation." />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,700&family=Source+Sans+3:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,700&family=Source+Sans+3:wght@400;600;700;800&display=swap"></noscript>
-
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
 <link rel="apple-touch-icon" href="assets/logo.svg" />
-  
-<script defer src="https://track.nexoquote.com/t/tracker.js" data-campaign="lp1" data-mode="direct" data-no-viewcontent="true"></script>
-
-<!-- Microsoft Clarity — deferred until first interaction to protect INP -->
-<script type="text/javascript">
-    (function () {
-      var loaded = false;
-      function loadClarity() {
-        if (loaded) return; loaded = true;
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "vbs0jia56r");
-      }
-      ['pointerdown','keydown','touchstart'].forEach(function (evt) {
-        window.addEventListener(evt, loadClarity, { once: true, passive: true });
-      });
-      // Fallback so no-interaction sessions are still recorded
-      window.addEventListener('load', function () {
-        if ('requestIdleCallback' in window) requestIdleCallback(loadClarity, { timeout: 4000 });
-        else setTimeout(loadClarity, 3000);
-      });
-    })();
+<script defer src="https://track.nexoquote.com/t/tracker.js" data-campaign="lp1" data-mode="direct" data-no-viewcontent="true" data-lp-id="nexoquote-auto-us"></script>
+<script>
+(function () {
+  var loaded = false;
+  function loadClarity() {
+    if (loaded) return; loaded = true;
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vbs0jia56r");
+  }
+  ['pointerdown','keydown','touchstart'].forEach(function (evt) {
+    window.addEventListener(evt, loadClarity, { once: true, passive: true });
+  });
+  window.addEventListener('load', function () {
+    if ('requestIdleCallback' in window) requestIdleCallback(loadClarity, { timeout: 4000 });
+    else setTimeout(loadClarity, 3000);
+  });
+})();
 </script>
-
 <style>
+/* ───────── THEME NEXO-REVIEW ─────────
+   Releve sur la planche Claude Design « Nexo Quote Landing », mesuree dans le
+   navigateur aux deux largeurs (390 et 1440) le 8 septembre 2026.
+
+   Premiere version : j'avais remplace la police, aplati la rampe violette sur
+   un seul cran et supprime toutes les ombres. Trois decisions de gout prises
+   sur une planche que personne ne m'avait demande de redessiner. Elles sont
+   annulees ici. Reste UNE correction, celle qui repose sur une mesure :
+
+   LE VIOLET D'ACTION. --color-accent-600 (#796CBF) mesure 4,09:1 face a la
+   lavande #F5F4FF et 4,46:1 face au blanc. La planche le pose en fond sous du
+   texte a 11, 12, 14 et 15 px : quatre echecs AA. Le gros bouton d'appel
+   (19px/700) est du grand texte et passe a 3:1 — lui n'a rien a corriger.
+   Plutot que de basculer sur accent-700 (#5D5294), qui eteint le violet de
+   toute la page, on avance d'un quart vers lui : #7266B4 mesure 4,51:1 sur
+   lavande et 4,92 sur blanc. Sept points par canal. La planche garde sa
+   couleur.
+
+   Ce qui vient d'elle, tel quel : Inter, la rampe violette complete, les
+   ombres violettes portees, #262A60 -> #796CBF en degrade sur le bandeau
+   chiffre, les rayons 8 / 14 / 999, le bouton 46 px, la pastille 34 px. */
+
+:root{
+  /* Rampe violette de la planche, inchangee. */
+  --accent-100: #f5f4ff;
+  --accent-200: #e7e5fe;
+  --accent-300: #d2cefd;
+  --accent-400: #b5abfc;
+  --accent-500: #968ae0;
+  --accent-600: #796cbf;
+  --accent-700: #5d5294;
+  --accent-800: #423a6a;
+  --accent-900: #2b2741;
+
+  /* Le cran d'action : accent-600 avance d'un quart vers accent-700. */
+  --accent-action: #7266b4;
+
+  --page:            #f5f4ff;   /* accent-100 : la lavande de la planche */
+  --surface:         #f3f5fe;   /* le blanc froid des cartes, pas #fff */
+  --surface-2:       #e7e5fe;   /* accent-200 */
+  --line:            #e7e5fe;   /* le filet des cartes */
+  --line-strong:     #d2cefd;   /* le filet des boutons de reponse */
+  --line-soft:       #e7e5fe;
+
+  --ink:             #292b31;   /* neutral-900 */
+  --ink-strong:      #3f424d;   /* neutral-800, les pastilles de preuve */
+  --ink-soft:        #595d6c;   /* neutral-700, 6,6:1 sur lavande */
+  /* #75798c (neutral-600 de la planche) mesure 4,31 sur blanc, 3,96 sur la
+     lavande et 3,50 sur l'en-tete teinte : il echoue AA sur les trois.
+     #5e6273 mesure 6,05 / 5,55 / 4,91. La planche ne s'en sert pas pour du
+     texte courant, donc la correction ne se voit nulle part. */
+  --ink-muted:       #5e6273;
+  --on-violet:       #f5f4ff;   /* la planche ecrit en lavande sur le violet */
+
+  --brand:           #262a60;   /* le depart du degrade du bandeau */
+  --brand-deep:      #2b2741;
+  --brand-ink:       #f5f4ff;
+  --brand-ink-soft:  #e7e5fe;   /* neutral/accent-200 sur le bandeau */
+  --brand-mark:      36px;
+
+  --accent:          var(--accent-action);
+  --accent-hover:    #5d5294;
+  --accent-deep:     #423a6a;
+  --accent-soft:     #f5f4ff;
+  --accent-line:     #d2cefd;
+  --accent-ring:     rgba(114,102,180,.34);
+  --on-accent:       #f5f4ff;
+
+  --positive:        var(--accent-action);
+  --positive-deep:   #423a6a;
+  --positive-soft:   #f5f4ff;
+  --positive-line:   #d2cefd;
+  --link:            #5d5294;
+  --star:            #5d5294;
+
+  /* Les degrades de la planche, releves un par un. */
+  --grad-hero:   linear-gradient(155deg, #e7e5fe 0%, #f5f4ff 44%, #f3f5fe 100%);
+  /* Le bandeau chiffre finit sur #6A5EA7 et non sur l'accent-600 de la
+     planche. Ses sous-titres sont en #E7E5FE a 14 px : sur le bleu de depart
+     ils mesurent 10,77:1, mais a l'autre bout du degrade, sur #796CBF, ils
+     tombent a 3,62. Ici aucun eclaircissement du texte ne rattrape quoi que ce
+     soit — le blanc pur plafonne a 4,46 — donc c'est la borne du degrade qui
+     doit descendre. #6A5EA7 (a mi-chemin d'accent-700) donne 4,53 pour les
+     sous-titres et 5,11 pour les chiffres. Le degrade reste violet. */
+  --grad-stats:  linear-gradient(115deg, #262a60 0%, #6a5ea7 100%);
+  --grad-agent:  linear-gradient(140deg, #e7e5fe 0%, #f3f5fe 70%);
+  --grad-rail:   linear-gradient(90deg, #796cbf, #b5abfc, #796cbf);
+  --grad-prog:   linear-gradient(90deg, #968ae0, #5d5294);
+
+  /* Les ombres violettes. C'est elles qui font « respirer » la planche ;
+     les avoir mises a none la rendait plate. */
+  --sh-card:   0 6px 20px #e7e5fe;   /* cartes « comment ca marche » */
+  --sh-media:  0 10px 30px #e7e5fe;  /* cadre photo du hero */
+  --sh-quiz:   0 18px 50px #d2cefd;  /* la carte du tunnel */
+  --sh-btn-sm: 0 6px 18px #d2cefd;   /* bouton telephone de l'en-tete */
+  --sh-btn:    0 10px 26px #d2cefd;  /* gros bouton d'appel */
+
+  --font-display: Inter, system-ui, -apple-system, sans-serif;
+  --font-body:    Inter, system-ui, -apple-system, sans-serif;
+
+  /* ───────── LES SEPT TAILLES FLUIDES DE LA PLANCHE ─────────
+     Relevees une par une dans sa source. J'en avais implemente trois et fige
+     les quatre autres sur leur valeur a 390 px — et comme je n'avais compare
+     les tailles QU'A 390, le controle passait au vert pendant que le desktop
+     rendait des titres de taille mobile. C'est exactement le piege que le
+     skill lp-clone decrit : « un token fige sur la mesure mobile, c'est un
+     titre de 24 px sur un ecran de 1900 ».
+
+     La pente compte autant que les bornes : mon h1 montait en 4,31vw (62 px
+     atteints a 1438) la ou la planche monte en 5,4vw (62 px atteints des
+     1148). Entre 630 et 1148 px son titre est plus gros que le mien. */
+  --fs-h1:        clamp(34px, 5.4vw, 62px);   /* le titre */
+  --fs-lede:      clamp(16px, 1.6vw, 19px);   /* le chapeau du hero */
+  --fs-question:  clamp(21px, 2.4vw, 28px);   /* la question du tunnel */
+  --fs-result:    clamp(23px, 2.6vw, 31px);   /* « You may qualify… » */
+  --fs-h2-band:   clamp(25px, 3.1vw, 36px);   /* « Talk to a licensed agent » */
+  --fs-h2-how:    clamp(27px, 3.4vw, 40px);   /* « How it works » */
+  --fs-stat:      clamp(30px, 3.6vw, 44px);   /* les chiffres du bandeau */
+  --fs-answer:    17px;                       /* seule taille fixe du lot */
+
+  /* Les rayons de la planche : 8 pour les controles, 14 pour les cartes,
+     999 pour les pastilles. */
+  --radius:      8px;
+  --radius-sm:   8px;
+  --radius-lg:   14px;
+  --radius-pill: 999px;
+
+  --gutter:  clamp(16px, 3.89vw, 56px);
+  --maxw:    1240px;
+
+  --btn-shadow:        var(--sh-btn);
+  --btn-shadow-active: 0 4px 12px #d2cefd;
+  --card-shadow:       var(--sh-card);
+}
+  /* ───────── ÉCHELLE TYPOGRAPHIQUE ─────────
+     Il n'y en avait pas. Les tailles etaient ecrites a la main dans trois
+     fichiers : 10, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 16, 17, 18,
+     19, 20, 22, 24, 26, 32 — mesure 15 tailles distinctes sur une seule page
+     construite, contre 8 a 10 sur les 17 pages du corpus lp-layout.
+     Huit crans. 12 est le plancher : sous 12 px on ne lit plus sur du mobile
+     paye. Un theme peut redefinir un cran, personne ne remet un px en dur. */
   :root{
-    --navy:#0a2049;
-    --navy-deep:#061735;
-    --navy-soft:#1c3768;
-    --orange:#ea580c;
-    --orange-bright:#f97316;
-    --orange-deep:#c2410c;
-    --blue:#1d4ed8;
-    --blue-deep:#1e40af;
-    --green:#16a34a;
-    --paper:#ffffff;
-    --ink:#0c1424;
-    --ink-soft:#3d4a63;
-    --muted:#6b7280;
-    --line:#e6e8ee;
-    --line-soft:#f1f3f7;
+    --fs-100: 12px;   /* mentions, conditions */
+    --fs-200: 16px;   /* meta, sous-texte */
+    --fs-300: 16px;   /* corps */
+    --fs-400: 18px;   /* corps fort, chapeau */
+    --fs-500: 22px;   /* h3, libelles forts */
+    --fs-600: 28px;   /* h2 */
+    --fs-700: 36px;   /* h1 mobile */
+    --fs-800: 56px;   /* le plus grand cran de la reference */
   }
 
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
   body{
-    font-family:'Source Sans 3', system-ui, -apple-system, sans-serif;
-    font-size:22px;
+    font-family:var(--font-body);
+    font-size:var(--fs-base);
     line-height:1.6;
     color:var(--ink);
-    background:var(--paper);
+    background:var(--page);
   }
 
   h1,h2,h3{
-    font-family:'Lora', Georgia, 'Times New Roman', serif;
+    font-family:var(--font-display);
     font-weight:700;
     line-height:1.15;
     letter-spacing:-.015em;
-    color:var(--navy);
+    color:var(--brand);
   }
 
-  a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
+  a{color:var(--link);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
 
   /* ───────── HEADER ───────── */
   header{
-    background:var(--paper);
+    background:var(--surface);
     border-bottom:1px solid var(--line);
   }
   .header-inner{
@@ -98,46 +222,46 @@
   }
   .brand{
     display:flex;align-items:center;gap:4px;
-    text-decoration:none;color:var(--navy);
+    text-decoration:none;color:var(--brand);
   }
   .brand-mark{
-    width:80px;height:80px;
+    width:var(--brand-mark);height:var(--brand-mark);
     display:flex;align-items:center;justify-content:center;
     flex-shrink:0;
   }
   .brand-mark img{width:100%;height:100%;display:block;object-fit:contain}
   .brand-text{
-    font-family:'Lora',serif;font-weight:700;font-size:26px;
-    line-height:1;letter-spacing:.01em;color:var(--navy);
+    font-family:var(--font-display);font-weight:700;font-size:var(--fs-600);
+    line-height:1;letter-spacing:.01em;color:var(--brand);
   }
   .brand-text small{
-    display:block;font-family:'Source Sans 3',sans-serif;
-    font-size:12px;font-weight:700;color:var(--orange);
+    display:block;font-family:var(--font-body);
+    font-size:var(--fs-100);font-weight:700;color:var(--accent);
     letter-spacing:.18em;text-transform:uppercase;margin-top:4px;
   }
   .header-phone{
     display:flex;align-items:center;gap:14px;
-    text-decoration:none;color:#fff;
-    background:var(--orange);
+    text-decoration:none;color:var(--on-accent);
+    background:var(--accent);
     padding:14px 22px;
     border-radius:12px;
-    box-shadow:0 5px 0 var(--orange-deep);
+    box-shadow:var(--btn-shadow);
     transition:background .15s ease, transform .1s ease;
   }
-  .header-phone:hover{background:var(--orange-bright);color:#fff}
-  .header-phone:active{transform:translateY(2px);box-shadow:0 3px 0 var(--orange-deep)}
+  .header-phone:hover{background:var(--accent-hover);color:var(--on-accent)}
+  .header-phone:active{transform:translateY(2px);box-shadow:var(--btn-shadow-active)}
   .header-phone .ico{
     width:44px;height:44px;border-radius:50%;
-    background:#fff;color:var(--orange);
+    background:var(--surface);color:var(--accent);
     display:flex;align-items:center;justify-content:center;flex-shrink:0;
   }
   .header-phone .ico svg{width:22px;height:22px}
-  .header-phone .num{font-weight:800;font-size:26px;color:#fff;line-height:1;font-family:'Source Sans 3',sans-serif;letter-spacing:.01em}
-  .header-phone .lbl{font-size:14px;color:#fff;font-weight:700;line-height:1.2;display:block;letter-spacing:.08em;text-transform:uppercase;opacity:.95;margin-bottom:4px}
+  .header-phone .num{font-weight:800;font-size:var(--fs-600);color:var(--on-accent);line-height:1;font-family:var(--font-body);letter-spacing:.01em}
+  .header-phone .lbl{font-size:var(--fs-200);color:var(--on-accent);font-weight:700;line-height:1.2;display:block;letter-spacing:.08em;text-transform:uppercase;opacity:.95;margin-bottom:4px}
 
   /* ───────── HERO ───────── */
   .hero{
-    background:var(--navy);
+    background:var(--brand);
     padding:14px 22px 8px;
     text-align:center;
   }
@@ -145,243 +269,78 @@
     max-width:880px;margin:0 auto;
   }
   .hero h1{
-    font-size:clamp(30px, 4vw, 42px);
+    font-size:var(--fs-h1);
     margin-bottom:8px;
-    color:#fff;
+    color:var(--on-accent);
     line-height:1.18;
   }
   .hero h1 em{
     font-style:italic;
-    color:var(--orange-bright);
+    /* Read on the dark brand band, so it takes its own token: the accent is
+       tuned for contrast against white and goes muddy here. */
+    color:var(--hero-mark, var(--brand-highlight));
     font-weight:700;
   }
   .hero .lede{
-    font-size:clamp(18px, 2vw, 22px);
-    color:#cbd5e1;
+    font-size:clamp(var(--fs-400), 2vw, var(--fs-500));
+    color:var(--brand-ink-soft);
     max-width:680px;margin:0 auto;
     line-height:1.4;
   }
-
-  /* ───────── QUIZ CARD ───────── */
-  .quiz-wrap{
-    background:var(--navy);
-    padding:6px 22px 56px;
-  }
-  .quiz{
-    max-width:820px;margin:0 auto;
-    background:var(--paper);
-    border:1px solid var(--line);
-    border-radius:18px;
-    padding:36px 48px 38px;
-    box-shadow:0 24px 60px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.2);
-    position:relative;
-  }
-  .quiz::before{
-    content:'';position:absolute;top:0;left:24px;right:24px;height:4px;
-    background:var(--orange);border-radius:0 0 4px 4px;
-  }
-
-  .quiz-top{
-    display:flex;justify-content:space-between;align-items:center;
-    margin-bottom:14px;
-    font-size:16px;color:var(--muted);font-weight:700;
-    letter-spacing:.04em;
-  }
-  .quiz-secure{display:inline-flex;align-items:center;gap:6px}
-  .quiz-secure svg{width:16px;height:16px}
-  #step-label.live-count{
-    font-size:20px;color:var(--green);font-weight:800;
-    letter-spacing:0;text-transform:none;
-    display:inline-flex;align-items:center;gap:9px;
-  }
-  #step-label.live-count::before{
-    content:'';width:11px;height:11px;border-radius:50%;
-    background:var(--green);
-    box-shadow:0 0 0 0 rgba(22,163,74,.7);
-    animation:pulseGreen 2s infinite;
-  }
-  @keyframes pulseGreen{
-    0%{box-shadow:0 0 0 0 rgba(22,163,74,.6)}
-    70%{box-shadow:0 0 0 9px rgba(22,163,74,0)}
-    100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}
-  }
-
-  .progress{
-    height:10px;background:var(--line-soft);border-radius:5px;
-    margin-bottom:32px;overflow:hidden;
-  }
-  .progress-bar{
-    height:100%;background:var(--orange);width:0%;
-    transition:width .4s ease;border-radius:5px;
-  }
-
-  .question{display:none}
-  .question.active{display:block}
-  .question h2{
-    font-size:clamp(28px, 4vw, 38px);
-    text-align:center;
-    margin-bottom:10px;
-    color:var(--navy);
-    line-height:1.2;
-  }
-  .question .qsub{
-    text-align:center;
-    color:var(--muted);
-    font-size:18px;
-    margin-bottom:26px;
-  }
-
-  .options{display:grid;gap:16px}
-  .options.stack{grid-template-columns:1fr}
-  .options.row{grid-template-columns:repeat(3,1fr);gap:14px}
-
-  .opt{
-    appearance:none;
-    border:none;
-    background:var(--orange);
-    color:#fff;
-    font:700 28px 'Source Sans 3', sans-serif;
-    padding:26px 28px;
-    border-radius:14px;
-    cursor:pointer;
-    text-align:center;
-    min-height:88px;
-    transition:background .15s ease, transform .1s ease;
-    box-shadow:0 6px 0 var(--orange-deep);
-    letter-spacing:.005em;
-  }
-  .opt:hover{background:var(--orange-bright)}
-  .opt:active{transform:translateY(3px);box-shadow:0 3px 0 var(--orange-deep)}
-  .opt.selected{background:var(--orange-deep)}
-
-  /* ───────── LOADING ───────── */
-  .loading{display:none;padding:8px 0}
-  .loading.active{display:block}
-  .loading h2{
-    font-size:30px;text-align:center;margin-bottom:8px;color:var(--navy);
-  }
-  .loading .qsub{
-    text-align:center;color:var(--muted);font-size:19px;margin-bottom:30px;
-  }
-  .load-list{
-    display:grid;gap:14px;max-width:480px;margin:0 auto;
-  }
-  .load-row{
-    display:flex;align-items:center;gap:16px;
-    padding:20px 22px;border-radius:12px;
-    background:var(--cream);
-    border:1px solid var(--line);
-    opacity:.5;transition:opacity .3s ease, background .3s ease, border-color .3s ease;
-    font-size:19px;font-weight:600;color:var(--navy);
-  }
-  .load-row.in-progress{opacity:1;background:#fff7ed;border-color:#fed7aa}
-  .load-row.done{opacity:1;background:#f0fdf4;border-color:#bbf7d0}
-  .load-row .ico{
-    width:36px;height:36px;border-radius:50%;
-    background:#e5d7bf;color:#fff;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  }
-  .load-row.in-progress .ico{background:var(--orange)}
-  .load-row.in-progress .ico svg{animation:spin 1s linear infinite}
-  .load-row.done .ico{background:var(--green)}
-  .load-row .ico svg{width:20px;height:20px}
-  @keyframes spin{to{transform:rotate(360deg)}}
-
-  /* ───────── RESULT ───────── */
-  .result{display:none;text-align:center}
-  .result.active{display:block}
-  .result h2{
-    font-size:clamp(30px, 4vw, 40px);
-    margin-bottom:14px;color:var(--navy);
-  }
-  .result .msg{
-    color:var(--ink-soft);
-    font-size:21px;
-    max-width:520px;margin:0 auto 28px;
-    line-height:1.5;
-  }
-  .result .msg strong{color:var(--ink)}
-
-  .call-button{
-    display:block;
-    background:var(--green);
-    color:#fff;
-    text-decoration:none;
-    padding:24px 24px;
-    border-radius:14px;
-    margin:0 auto 16px;
-    max-width:520px;
-    text-align:center;
-    transition:transform .1s ease, background .15s ease;
-    box-shadow:0 7px 0 #0f7a36;
-  }
-  .call-button:hover{background:#15803d;color:#fff}
-  .call-button:active{transform:translateY(3px);box-shadow:0 4px 0 #0f7a36}
-  .call-button .lbl{
-    display:block;font-size:16px;font-weight:700;letter-spacing:.1em;
-    text-transform:uppercase;opacity:.95;margin-bottom:6px;
-  }
-  .call-button .num{
-    display:block;
-    font-family:'Lora', serif;
-    font-weight:700;
-    font-size:clamp(36px, 6vw, 52px);
-    letter-spacing:-.01em;line-height:1;
-  }
   /* ───────── TRUST STRIP ───────── */
   .trust-strip{
-    background:var(--paper);
+    background:var(--surface);
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
     padding:26px 24px;
     text-align:center;
-    font-size:19px;color:var(--ink-soft);
+    font-size:var(--fs-500);color:var(--ink-soft);
   }
-  .trust-strip strong{color:var(--navy);font-weight:700}
-  .trust-strip .sep{margin:0 16px;color:#cbd5e1}
+  .trust-strip strong{color:var(--brand);font-weight:700}
+  .trust-strip .sep{margin:0 16px;color:var(--ink-muted)}
 
   /* ───────── SECTIONS ───────── */
   .section{
     max-width:820px;margin:0 auto;padding:64px 24px;
   }
   .section h2{
-    font-size:clamp(30px, 4vw, 42px);
-    text-align:center;margin-bottom:40px;color:var(--navy);
+    font-size:clamp(var(--fs-700), 4vw, var(--fs-800));
+    text-align:center;margin-bottom:40px;color:var(--brand);
   }
 
   /* ───────── TESTIMONIALS ───────── */
   .quote{
-    border-left:5px solid var(--orange);
+    border-left:5px solid var(--accent);
     padding:6px 0 6px 28px;
     margin-bottom:40px;
   }
   .quote p{
-    font-family:'Lora', serif;
-    font-size:clamp(20px, 2.4vw, 24px);
+    font-family:var(--font-display);
+    font-size:clamp(var(--fs-500), 2.4vw, var(--fs-600));
     font-style:italic;
     line-height:1.5;color:var(--ink);
     margin-bottom:14px;
   }
   .quote .who{
-    font-size:18px;color:var(--ink-soft);
-    font-family:'Source Sans 3',sans-serif;font-style:normal;
+    font-size:var(--fs-400);color:var(--ink-soft);
+    font-family:var(--font-body);font-style:normal;
   }
-  .quote .who strong{color:var(--navy);font-weight:700}
+  .quote .who strong{color:var(--brand);font-weight:700}
   .quote:last-child{margin-bottom:0}
 
   /* ───────── CALL BAND ───────── */
   .call-band{
-    background:var(--navy);
-    color:#fff;
+    background:var(--brand);
+    color:var(--on-accent);
     padding:60px 24px;
     text-align:center;
   }
   .call-band h2{
-    font-size:clamp(28px, 3.6vw, 38px);
-    color:#fff;margin-bottom:10px;
+    font-size:clamp(var(--fs-700), 3.6vw, var(--fs-800));
+    color:var(--on-accent);margin-bottom:10px;
   }
-  .call-band p{color:#cbd5e1;font-size:20px;margin-bottom:30px}
-  .call-band .hours{margin-top:18px;color:#cbd5e1;font-size:17px}
+  .call-band p{color:var(--brand-ink-soft);font-size:var(--fs-500);margin-bottom:30px}
+  .call-band .hours{margin-top:18px;color:var(--brand-ink-soft);font-size:var(--fs-400)}
 
   /* ───────── FAQ ───────── */
   .faq-item{
@@ -391,409 +350,1348 @@
   .faq-item summary{
     list-style:none;cursor:pointer;
     padding:22px 0;
-    font-size:22px;font-weight:700;
+    font-size:var(--fs-500);font-weight:700;
     display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
-    line-height:1.4;color:var(--navy);
-    font-family:'Lora',serif;
+    line-height:1.4;color:var(--brand);
+    font-family:var(--font-display);
   }
   .faq-item summary::-webkit-details-marker{display:none}
   .faq-item summary::after{
-    content:'+';font-size:32px;font-weight:400;color:var(--orange);
+    content:'+';font-size:var(--fs-700);font-weight:400;color:var(--accent);
     line-height:1;flex-shrink:0;
     transition:transform .15s ease;
   }
   .faq-item[open] summary::after{transform:rotate(45deg)}
   .faq-item .body{
     padding:0 0 24px;
-    font-size:19px;color:var(--ink-soft);line-height:1.6;
+    font-size:var(--fs-500);color:var(--ink-soft);line-height:1.6;
     max-width:92%;
   }
 
   /* ───────── FOOTER ───────── */
   footer{
-    background:var(--navy-deep);
-    color:#94a3b8;
+    background:var(--brand-deep);
+    color:var(--brand-ink-soft);
     padding:36px 24px 44px;
-    font-size:15px;line-height:1.6;
+    font-size:var(--fs-300);line-height:1.6;
   }
   .foot-inner{max-width:820px;margin:0 auto;text-align:center}
   .foot-links{
     display:flex;justify-content:center;gap:24px;
     margin:0 0 18px;flex-wrap:wrap;
   }
-  .foot-links a{color:#fbbf24;font-weight:600;text-decoration:none;font-size:16px}
+  .foot-links a{color:var(--brand-ink);font-weight:600;text-decoration:none;font-size:var(--fs-300)}
   .foot-links a:hover{text-decoration:underline}
-  .foot-disclaimer{font-size:14px;line-height:1.55;color:#94a3b8;text-align:left}
-  .foot-copy{margin-top:18px;font-size:14px;color:#64748b}
+  .foot-disclaimer{font-size:var(--fs-200);line-height:1.55;color:var(--brand-ink-soft);text-align:left}
+  .foot-copy{margin-top:18px;font-size:var(--fs-200);color:var(--brand-ink-soft)}
+  a:focus-visible, button:focus-visible, summary:focus-visible,
+  input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline:3px solid var(--accent-ring, rgba(0,0,0,.28));
+    outline-offset:2px;
+    border-radius:var(--radius);
+  }
 
   /* ───────── MOBILE ───────── */
   @media (max-width: 720px){
-    body{font-size:19px}
+    body{font-size:var(--fs-500)}
     .header-inner{padding:8px 14px}
     .header-phone .lbl{display:none}
-    .header-phone .num{font-size:20px}
-    .header-phone{padding:8px 12px;gap:8px;box-shadow:0 3px 0 var(--orange-deep)}
+    .header-phone .num{font-size:var(--fs-500)}
+    .header-phone{padding:8px 12px;gap:8px;box-shadow:var(--btn-shadow-active)}
     .header-phone .ico{width:34px;height:34px}
     .header-phone .ico svg{width:16px;height:16px}
-    .brand-text{font-size:20px}
-    .brand-text small{font-size:10px}
+    .brand-text{font-size:var(--fs-500)}
+    .brand-text small{font-size:var(--fs-100)}
     .brand-mark{width:60px;height:60px}
     .hero{padding:14px 16px 10px}
-    .hero h1{font-size:24px;line-height:1.2;margin-bottom:6px}
-    .hero .lede{font-size:17px;line-height:1.35}
-    .quiz-wrap{padding:6px 12px 36px}
-    .quiz{padding:26px 22px 26px;border-radius:14px}
-    .quiz-top{font-size:14px;margin-bottom:10px}
-    .progress{margin-bottom:22px;height:9px}
-    .question h2{font-size:26px;margin-bottom:6px;line-height:1.2}
-    .question .qsub{font-size:16px;margin-bottom:20px}
-    .opt{font-size:24px;padding:22px 16px;min-height:76px;box-shadow:0 5px 0 var(--orange-deep)}
-    .options.row .opt{padding:22px 6px;font-size:22px}
-    .options{gap:12px}
+    .hero h1{font-size:var(--fs-600);line-height:1.2;margin-bottom:6px}
+    .hero .lede{font-size:var(--fs-400);line-height:1.35}
     .section{padding:40px 20px}
     .call-band{padding:44px 20px}
-  }
-
-  @media (max-width: 380px){
-    .opt{font-size:20px;padding:20px 10px}
-    .options.row .opt{font-size:19px}
   }
 
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:.001s !important;transition-duration:.001s !important}
   }
+
+  /* ═══════════════════════════════════════════════════════════════════════
+     CLARITY FIXES — every rule below answers a measured number, not a taste.
+     Source: Clarity AutoCoverage, 01/06 → 05/08/2026, 2 247 page views,
+     943 taps recorded on mobile. Enforced here so no archetype can lose them.
+     ═══════════════════════════════════════════════════════════════════════ */
+  /* Average scroll depth is 44.8% — more than half of visitors never reach the
+     testimonials or the call band, which is where the phone number lives. The
+     sticky bar puts it back in reach the moment the quiz is answered. It stays
+     hidden until then so it cannot compete with the first question. */
+  .sticky-cta{
+    position:fixed;left:0;right:0;bottom:0;z-index:50;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    background:var(--brand-deep);
+    border-top:1px solid rgba(255,255,255,.14);
+    transform:translateY(110%);
+    transition:transform .25s ease;
+  }
+  .sticky-cta.visible{transform:translateY(0)}
+  /* Plancher de 44 px sur la cible elle-meme, pas sur la barre. Mesure sur le
+     build : la barre faisait 51 px grace a son propre padding, mais le <a>
+     tappable a l'interieur faisait 26 px avec 0 de padding — on visait la
+     barre et on touchait a cote. C'est l'action principale de la page. */
+  .sticky-cta .call-button{
+    margin:0;width:100%;
+    min-height:44px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+  @media (min-width:720px){ .sticky-cta{display:none} }
+
+  /* Le plancher ci-dessus ne couvrait QUE la barre collante. Le clic sortant
+     d'une page de comparaison est passe a travers et s'est retrouve a 37 px.
+     Ici le plancher est pose sur toutes les cibles d'action, dans le fichier
+     partage, pour qu'aucun archetype ne puisse le reperdre. Un archetype peut
+     monter au-dessus ; il ne peut plus descendre en dessous. */
+  .offer-cta, .call-button, .opt{ min-height:44px }
+
+  /* Room for the sticky bar so it never covers the last option. */
+  body:has(.sticky-cta.visible){padding-bottom:96px}
+
+
+
+  /* ───────── ARCHETYPE QUOTE-REVIEW ─────────
+     Ecrit contre la planche « Nexo Quote Landing », mesuree dans le navigateur
+     a 390 ET a 1440 le 8 septembre 2026. Chaque valeur ci-dessous vient d'un
+     getComputedStyle sur la planche, pas d'un coup d'oeil sur une capture.
+
+     La premiere version de ce fichier gardait notre mise en page et se
+     contentait de repeindre nos couleurs. Ce qu'elle avait perdu :
+       · les pastilles de preuve, remplacees par une liste verticale a icones
+       · la gelule de surtitre, devenue un rectangle a filet
+       · le halo violet sous la carte du tunnel, mis a none
+       · le rail degrade de 4 px en tete de cette carte, absent
+       · le hero a deux colonnes a 1440 (recit a gauche, tunnel a droite),
+         reste empile
+       · le degrade du bandeau chiffre, aplati sur son seul bleu de depart
+       · la bande assureurs, supprimee : 11 % de la page
+     C'etait une autre page.
+
+     Le moteur reste celui de quiz-call, inchange : le tracking
+     (trackClickButton, registerConversion, trackCallClick) et le correctif INP
+     (afterPaint, ecouteur delegue, garde re-tap) viennent avec. */
+
+  body{ line-height:1.55; }
+
+  /* ───────── EN-TETE ─────────
+     71 px, fond lavande a 92 % d'opacite : la planche laisse transparaitre ce
+     qui passe dessous. */
+  .topbar{
+    position:sticky; top:0; z-index:20;
+    padding:12px var(--gutter);
+    background:rgba(245,244,255,.92);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+  }
+  /* Pas de laisse a 1240 ici : sur la planche l'en-tete n'en a pas, le numero
+     va se coller a la gouttiere droite de l'ecran. */
+  .topbar-in{
+    width:100%;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .topbar-brand{
+    display:flex; align-items:center; gap:10px;
+    text-decoration:none; min-width:0;
+  }
+  .topbar-logo{ display:block; border-radius:var(--radius); flex-shrink:0; }
+  .topbar-names{ display:flex; flex-direction:column; min-width:0; }
+  .topbar-name{ font-size:var(--fs-300); font-weight:600; color:var(--ink); letter-spacing:-.01em; line-height:1.15; }
+  .topbar-tag{ font-size:var(--fs-100); font-weight:400; color:var(--accent-action); line-height:1.15; }
+
+  /* 180 x 46, rayon 8, halo violet porte. */
+  .topbar-phone{
+    display:inline-flex; align-items:center; gap:8px; flex-shrink:0;
+    min-height:46px; padding:0 20px;
+    background:var(--accent-action); color:var(--on-violet);
+    border-radius:var(--radius); text-decoration:none;
+    font-size:var(--fs-300); font-weight:600;
+    box-shadow:var(--sh-btn-sm);
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+  }
+  .topbar-phone:hover{ background:var(--accent-hover); color:var(--on-violet); }
+  .topbar-phone svg{ width:16px; height:16px; flex-shrink:0; }
+
+  /* ───────── HERO ─────────
+     Une colonne a 390, DEUX a 1440 : le recit a gauche, le tunnel a droite.
+     C'est la difference structurelle que la premiere version avait perdue. */
+  /* base.css porte encore `.hero{ background:var(--brand); padding:14px 22px
+     8px; text-align:center }` pour un autre archetype. Le fond et le padding
+     etaient bien repris ici, pas l'alignement : toute la colonne de gauche
+     sortait centree alors que la planche est calee a gauche. */
+  .hero{ background:var(--grad-hero); padding:0; text-align:left; }
+  .hero-copy, .hero-media{ text-align:left; min-width:0; }
+  .hero-in{
+    max-width:var(--maxw); margin:0 auto;
+    display:grid; gap:28px;
+    padding:32px var(--gutter) 40px;
+  }
+  /* A 390 la grille suit le DOM : recit, TUNNEL, photo. Le tunnel arrive donc
+     juste apres les pastilles de preuve au lieu d'etre repousse sous une photo
+     de 260 px. A 900 les zones le replacent comme sur la planche : recit et
+     photo a gauche, tunnel a droite. */
+  @media (min-width:900px){
+    .hero-in{
+      grid-template-columns:1fr 1fr;
+      grid-template-areas:'copy quiz' 'media quiz';
+      grid-template-rows:auto 1fr;
+      column-gap:clamp(28px,4vw,58px); row-gap:0;
+      padding:76px var(--gutter) 72px;
+      align-items:start;
+    }
+    .hero-copy { grid-area:copy; }
+    .quiz-wrap { grid-area:quiz; }
+    .hero-media{ grid-area:media; margin-top:28px; }
+  }
+
+  /* La gelule de surtitre. Sur la planche : 152 x 31, rayon 999, fond violet,
+     texte lavande. La premiere version en avait fait un rectangle a filet avec
+     du texte violet dedans — l'inverse. */
+  .badge{
+    display:inline-block;
+    padding:6px 14px; border-radius:var(--radius-pill);
+    background:var(--accent-action); color:var(--on-violet);
+    font-size:var(--fs-150); font-weight:600; letter-spacing:.05em;
+    text-transform:uppercase; line-height:1.55;
+  }
+  .hero h1{
+    font-size:var(--fs-h1); line-height:1.03; font-weight:700;
+    letter-spacing:-.035em; color:var(--ink); margin:20px 0 0;
+    text-wrap:pretty;
+  }
+  .hero h1 em{ font-style:normal; color:var(--accent-700); }
+  .hero .lede{
+    margin:18px 0 0; max-width:46ch;
+    font-size:var(--fs-lede); color:var(--ink-soft); line-height:1.6;
+    text-wrap:pretty;
+  }
+
+  /* Les preuves sont des PASTILLES en ligne qui passent a la ligne, pas une
+     liste verticale. Fond blanc froid, filet fin, rayon 999, 13 px en 500. */
+  .hero-hub-proofs{
+    list-style:none; margin:26px 0 0; padding:0;
+    display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .hero-hub-proofs li{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 14px;
+    background:var(--surface); border:.8px solid var(--line);
+    border-radius:var(--radius-pill);
+    font-size:var(--fs-200); font-weight:500; color:var(--ink-strong);
+    line-height:1.55;
+  }
+  .hero-hub-proofs li strong{ font-size:var(--fs-300); font-weight:700; color:var(--accent-700); }
+  .hero-hub-proofs .ico{ width:15px; height:15px; flex-shrink:0; color:var(--accent-700); display:block; }
+  .hero-hub-proofs .ico svg{ width:100%; height:100%; display:block; }
+
+  /* ───────── EMPLACEMENTS D'IMAGE ─────────
+     La planche elle-meme les laisse vides : ses cinq cases assureurs et ses
+     deux cadres photo sont des <image-slot> sans fichier. On reprend donc SON
+     cadre — filet fin, rayon 14, halo — plutot qu'un pointille etranger a la
+     page. Ils se remplissent des que le spec porte un fichier. */
+  .slot{
+    margin:28px 0 0;
+    border:.8px solid var(--line);
+    border-radius:var(--radius-lg);
+    background:var(--surface);
+    box-shadow:var(--sh-media);
+    /* La planche fixe `height: clamp(180px, 24vw, 260px)` et recadre la photo
+       dedans. On reprend sa valeur telle quelle. */
+    height:clamp(180px, 24vw, 260px);
+    overflow:hidden;
+    padding:24px 20px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
+    text-align:center;
+  }
+  .slot .ico{ width:26px; height:26px; color:var(--ink-muted); }
+  .slot .ico svg{ width:100%; height:100%; display:block; }
+  .slot p{ margin:0; font-size:var(--fs-200); color:var(--ink-muted); max-width:34ch; line-height:1.5; }
+  .slot img{ width:100%; height:100%; object-fit:cover; display:block; border-radius:var(--radius-lg); }
+  .slot.filled{ padding:0; }
+  /* 1100x520 : le cadre de la planche a presque le meme rapport. On garde
+     le visage (haut-centre) si un cran de largeur recadre un peu. */
+  .hero-media .slot img{ object-position:50% 28%; }
+
+  .talk-first{
+    margin:20px 0 0; max-width:46ch;
+    font-size:var(--fs-250); color:var(--ink-soft); line-height:1.6;
+  }
+  .talk-first a{ color:var(--accent-700); font-weight:600; }
+
+  /* ───────── LE TUNNEL ─────────
+     Il vit DANS le hero, sur le meme fond, pas dans une section a lui. */
+  .quiz-wrap{ display:block; }
+  .quiz{
+    position:relative; overflow:hidden;
+    background:var(--surface);
+    border:.8px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:clamp(20px, 3vw, 34px);
+    box-shadow:var(--sh-quiz);
+  }
+  /* Le rail degrade de 4 px en tete de carte. C'est le seul endroit de la page
+     ou la planche pose un degrade horizontal violet clair. */
+  .quiz::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    background:var(--grad-rail);
+  }
+  /* La planche colle la carte (`position:sticky; top:84px`). Retire : a
+     l'usage elle s'accroche puis se decolle au fil du defilement, ce qui donne
+     l'a-coup signale. Une carte qui reste dans le flux ne saute jamais. */
+
+  .quiz-top{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    font-size:var(--fs-150); font-weight:600; color:var(--ink-soft);
+  }
+  .quiz-secure{ display:inline-flex; align-items:center; gap:6px; }
+  .quiz-secure svg{ width:13px; height:13px; }
+  .progress{
+    height:6px; background:var(--accent-200);
+    border-radius:var(--radius-pill); overflow:hidden; margin:12px 0 24px;
+  }
+  .progress-bar{
+    height:100%; width:0; background:var(--grad-prog);
+    border-radius:var(--radius-pill); transition:width .3s ease;
+  }
+
+  .question{ display:none }
+  .question.active{ display:block }
+  .question h2{
+    font-size:var(--fs-question); line-height:1.18; font-weight:700;
+    letter-spacing:-.025em; color:var(--ink); margin:0;
+  }
+  .question .qsub{
+    font-size:var(--fs-250); color:var(--ink-soft); margin:8px 0 0; line-height:1.55;
+  }
+  .options{ display:grid; gap:10px; margin-top:22px; }
+
+  /* 58 px, fond lavande, filet accent-300, libelle 17 px en 500 — pas 700.
+     La reponse a gauche, le chevron a droite. */
+  .opt{
+    appearance:none; width:100%; cursor:pointer;
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    min-height:58px; padding:0 18px;
+    background:var(--accent-100); color:var(--ink);
+    border:1.5px solid var(--line-strong);
+    border-radius:var(--radius);
+    font:500 var(--fs-answer)/1.35 var(--font-body);
+    text-align:left;
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+    position:relative;
+    transition:background .15s ease, border-color .15s ease;
+  }
+  /* Zone tactile debordante : 474 taps sur 943 tombaient dans les gouttieres
+     entre les boutons, mesure sur Clarity. */
+  .opt::after{ content:''; position:absolute; inset:-5px; }
+  .opt::before{
+    content:''; position:absolute; right:18px; top:50%;
+    width:7px; height:7px; margin-top:-4px;
+    border-right:2px solid var(--accent-action); border-top:2px solid var(--accent-action);
+    transform:rotate(45deg);
+  }
+  .opt:hover{ border-color:var(--accent-action); background:var(--surface-2); transform:translateY(-1px); }
+  .opt:active{ background:var(--line-strong); transform:none; }
+  .opt.selected{ background:var(--accent-action); border-color:var(--accent-action); color:var(--on-violet); }
+  .opt.selected::before{ border-color:var(--on-violet); }
+
+  /* ───────── LES TROIS ECRANS DU TUNNEL ─────────
+     Un seul visible a la fois : les questions, la verification, le resultat. */
+  .quiz-pane,.loading,.result{ display:none }
+  .quiz-pane.active,.loading.active,.result.active{ display:block }
+  .loading h2{
+    font-size:var(--fs-550); font-weight:700; letter-spacing:-.025em;
+    color:var(--ink); margin:0 0 8px;
+  }
+  .loading{ padding:8px 0 4px; }
+
+  /* La barre de balayage de la verification : une progression indeterminee,
+     parce qu'a cet instant on ne sait pas combien de temps ca prendra. */
+  .sweep{
+    height:6px; border-radius:var(--radius-pill);
+    background:var(--accent-200); margin-top:28px;
+    overflow:hidden; position:relative;
+  }
+  .sweep span{
+    position:absolute; inset:0; width:40%;
+    background:var(--accent-action);
+    border-radius:var(--radius-pill);
+    animation:nq-sweep 1.1s linear infinite;
+  }
+  @keyframes nq-sweep{
+    0%{ transform:translateX(-100%) } 100%{ transform:translateX(250%) }
+  }
+
+  /* ───────── L'ECRAN RESULTAT ───────── */
+  .result{ animation:nq-fade 320ms ease both; }
+  @keyframes nq-fade{ from{ opacity:0; transform:translateY(6px) } to{ opacity:1; transform:none } }
+
+  .pill-match{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 14px; border-radius:var(--radius-pill);
+    background:var(--accent-action); color:var(--on-violet);
+    font-size:var(--fs-150); font-weight:600;
+    letter-spacing:.05em; text-transform:uppercase; line-height:1.55;
+  }
+  .result h2{
+    font-size:var(--fs-result); line-height:1.14; font-weight:700;
+    letter-spacing:-.025em; color:var(--ink); margin:16px 0 0;
+  }
+  .result .msg{
+    font-size:var(--fs-300); line-height:1.6; color:var(--ink-soft); margin:10px 0 0;
+  }
+  .agents-now{
+    font-size:var(--fs-150); color:var(--ink-soft); margin:10px 0 0; text-align:center;
+  }
+
+  /* Le trait « ou faites-vous rappeler ». */
+  .or-line{
+    display:flex; align-items:center; gap:12px; margin:24px 0 20px;
+  }
+  .or-line::before,.or-line::after{
+    content:''; height:1px; flex:1; background:var(--accent-200);
+  }
+  .or-line span{ font-size:var(--fs-150); color:var(--ink-soft); }
+
+  /* ───────── LE FORMULAIRE DE RAPPEL ───────── */
+  .callback-form{ display:grid; gap:10px; }
+  .callback-form .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .callback-form input{
+    min-height:50px; padding:0 14px;
+    border-radius:var(--radius);
+    border:1.5px solid var(--line-strong);
+    background:var(--accent-100); color:var(--ink);
+    font:400 var(--fs-350)/1.4 var(--font-body);
+    min-width:0; width:100%;
+  }
+  .callback-form input::placeholder{ color:var(--ink-muted); opacity:1; }
+  .callback-form input:focus{ outline:none; border-color:var(--accent-action); }
+  .callback-form input:focus-visible{ outline:3px solid var(--accent-ring); outline-offset:1px; }
+
+  /* Le bouton du formulaire est en CONTOUR : sur cet ecran le bouton plein,
+     c'est l'appel. Deux boutons pleins se disputeraient le meme regard. */
+  .form-submit{
+    appearance:none; cursor:pointer;
+    min-height:50px; border-radius:var(--radius);
+    border:1.5px solid var(--accent-action);
+    background:transparent; color:var(--accent-700);
+    font:600 var(--fs-350)/1.4 var(--font-body);
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+  }
+  .form-submit:hover{ background:var(--surface-2); }
+  .form-error{
+    margin:0; font-size:var(--fs-200); font-weight:600; color:#8a1c2b;
+  }
+  .form-consent{
+    font-size:var(--fs-100); line-height:1.5; color:var(--ink-soft); margin:4px 0 0;
+  }
+
+  .callback-thanks{
+    border:1.5px solid var(--accent-500);
+    background:var(--surface-2);
+    border-radius:var(--radius);
+    padding:16px;
+  }
+  .thanks-title{ margin:0; font-size:var(--fs-300); font-weight:600; color:var(--accent-800); }
+  .thanks-body{ margin:6px 0 0; font-size:var(--fs-200); color:var(--ink-soft); }
+
+  .quiz-restart{
+    appearance:none; background:transparent; border:0; padding:12px 0 0;
+    cursor:pointer; font:400 var(--fs-200)/1.4 var(--font-body); color:var(--ink-soft);
+  }
+  .quiz-restart:hover{ color:var(--accent-700); }
+
+  .msg{ color:var(--ink-soft); margin:0 0 16px; font-size:var(--fs-250); line-height:1.55; }
+  .load-row{
+    display:flex; align-items:center; gap:10px;
+    padding:10px 0; border-top:.8px solid var(--line);
+    color:var(--ink-soft); font-size:var(--fs-200);
+  }
+  .load-row .ico{ width:18px; height:18px; flex-shrink:0; color:var(--accent-action); }
+  .load-row .ico svg{ width:100%; height:100%; display:block; }
+  .load-row.done{ color:var(--ink); }
+
+  .quiz-foot{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    margin:18px 0 0; min-height:28px;
+  }
+  .quiz-note{ font-size:var(--fs-150); color:var(--ink-soft); margin-left:auto; }
+  .quiz-back{
+    appearance:none; background:transparent; border:0; padding:4px 0;
+    cursor:pointer; font:400 var(--fs-250)/1.4 var(--font-body);
+    color:var(--ink-soft);
+  }
+  .quiz-back:hover{ color:var(--accent-700); }
+
+  /* ───────── BANDEAU CHIFFRE ─────────
+     Degrade #262A60 -> #796CBF a 115deg. La premiere version l'avait aplati
+     sur le seul #262A60 : la moitie violette du bandeau avait disparu. */
+  .stats{
+    background:var(--grad-stats);
+    padding:34px var(--gutter);
+    color:var(--brand-ink);
+  }
+  .stats-in{
+    max-width:var(--maxw); margin:0 auto;
+    display:grid; gap:28px;
+  }
+  .stat-fig{
+    font-size:var(--fs-stat); font-weight:700; letter-spacing:-.03em;
+    line-height:1.55; color:var(--brand-ink);
+    font-variant-numeric:tabular-nums;
+  }
+  .stat-lbl{
+    margin:6px 0 0; font-size:var(--fs-250); font-weight:400;
+    color:var(--brand-ink-soft); line-height:1.55;
+  }
+  @media (min-width:820px){
+    .stats{ padding:60px var(--gutter); }
+    .stats-in{ grid-template-columns:repeat(3,1fr); }
+  }
+
+  /* ───────── LA BANDE ASSUREURS ─────────
+     Cinq cases, 2 colonnes a 390, 5 a 1440. Sur la planche ce sont cinq
+     <image-slot> VIDES : aucun logo, aucune marque nommee, donc aucun
+     partenariat affirme. La note de direction refuse « a carrier logo row we
+     cannot honor » — une rangee de cadres vides n'en honore aucun, elle dit
+     seulement ou les logos iront. Elle avait ete supprimee, et avec elle 11 %
+     de la page. */
+  /* La laisse a 1240 porte sur la boite QUI A le padding, comme sur la
+     planche : 1240 - 2x56 = 1128 px de contenu, donc cinq cases de 216. En la
+     posant sur un conteneur interieur, on obtenait 1240 de contenu et des
+     cases de 238 — 22 px de trop par case. */
+  .carriers{ max-width:var(--maxw); margin:0 auto; padding:40px var(--gutter); }
+  .carriers-in{ margin:0; }
+  .carriers h2{
+    font-size:var(--fs-150); font-weight:600; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--accent-700);
+    margin:0 0 20px; line-height:1.55;
+  }
+  .carrier-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; }
+  .carrier{
+    min-height:76px;
+    background:var(--surface); border:.8px solid var(--line);
+    border-radius:var(--radius);
+    display:flex; align-items:center; justify-content:center;
+    padding:12px;
+    font-size:var(--fs-150); color:var(--ink-muted); text-align:center; line-height:1.4;
+  }
+  /* Les cinq marques ont des rapports tres differents — de 3,9:1 (Nationwide)
+     a 8,3:1 (Progressive). En les laissant remplir la largeur, leurs hauteurs
+     allaient de 18 a 38 px et la rangee partait de travers. Le plafond de
+     hauteur ramene les plus trapues a 32 px ; les plus etirees restent
+     contraintes par la largeur. On ne touche ni aux couleurs ni aux
+     proportions des marques. */
+  .carrier img{ max-width:100%; max-height:32px; width:auto; height:auto; object-fit:contain; display:block; }
+  @media (min-width:820px){
+    .carriers{ padding:72px var(--gutter); }
+    .carrier-grid{ grid-template-columns:repeat(5,1fr); }
+  }
+
+  /* ───────── COMMENT CA MARCHE ───────── */
+  .how{ max-width:var(--maxw); margin:0 auto; padding:0 var(--gutter) 48px; }
+  .how-in{ margin:0; }
+  .how h2{
+    font-size:var(--fs-h2-how); line-height:1.12; font-weight:700;
+    letter-spacing:-.03em; color:var(--ink); margin:0 0 8px;
+  }
+  .how .lede{
+    font-size:var(--fs-350); color:var(--ink-soft);
+    margin:0 0 32px; line-height:1.55; max-width:52ch;
+  }
+  .how-list{ display:grid; gap:20px; }
+  .how-step{
+    background:var(--surface); border:.8px solid var(--line);
+    border-radius:var(--radius-lg); padding:24px;
+    box-shadow:var(--sh-card);
+  }
+  /* La pastille : 34 x 34, ronde, violet PLEIN, chiffre lavande en 14/700.
+     La premiere version la remplissait d'accent-200 avec le chiffre en violet
+     dessus — la meme inversion que sur la gelule de surtitre. */
+  .how-num{
+    display:grid; place-items:center;
+    width:34px; height:34px; border-radius:var(--radius-pill);
+    background:var(--accent-action); color:var(--on-violet);
+    font-size:var(--fs-250); font-weight:700; line-height:1;
+    font-variant-numeric:tabular-nums;
+  }
+  .how-step h3{
+    font-size:var(--fs-450); font-weight:600; letter-spacing:-.02em;
+    color:var(--ink); margin:14px 0 8px; line-height:1.12;
+  }
+  .how-step p{ font-size:var(--fs-300); color:var(--ink-soft); margin:0; line-height:1.6; }
+  @media (min-width:820px){
+    .how{ padding:0 var(--gutter) 88px; }
+    .how-list{ grid-template-columns:repeat(3,1fr); }
+  }
+
+  /* ───────── L'APPEL ─────────
+     Une carte a degrade, pas une bande pleine largeur. Deux colonnes a 1440 :
+     le texte et le bouton a gauche, le portrait a droite. */
+  .band{ max-width:var(--maxw); margin:0 auto; padding:0 var(--gutter) 48px; }
+  .band-card{
+    background:var(--grad-agent);
+    border:.8px solid var(--line-strong);
+    border-radius:var(--radius-lg);
+    padding:clamp(24px,3.06vw,44px);
+    display:grid; gap:28px; align-items:center;
+  }
+  .band h2{
+    font-size:var(--fs-h2-band); font-weight:700; letter-spacing:-.03em;
+    color:var(--ink); margin:0; line-height:1.12;
+  }
+  .band p{ font-size:var(--fs-350); color:var(--ink-soft); margin:12px 0 20px; line-height:1.6; }
+  .band .hours{ font-size:var(--fs-200); color:var(--ink-soft); margin:10px 0 0; }
+  /* Le portrait : planche `height: clamp(200px, 26vw, 300px)`. Le visage
+     est a droite du cadre 1000x600 — on l'ancre pour qu'un recadrage
+     cover ne coupe pas le casque. */
+  .band .slot{
+    margin:0; border-radius:var(--radius); border-color:var(--line-strong);
+    box-shadow:none; height:clamp(200px, 26vw, 300px);
+  }
+  .band .slot img{ border-radius:var(--radius); object-position:72% 30%; }
+  @media (min-width:820px){
+    .band{ padding:0 var(--gutter) 88px; }
+    .band-card{ grid-template-columns:1fr 1fr; }
+  }
+
+  /* Le gros bouton d'appel : 58 px, 19/700. A cette taille c'est du grand
+     texte, donc l'accent-600 de la planche y passerait AA tel quel ; il porte
+     quand meme le cran d'action pour que tous les boutons de la page soient
+     d'un seul violet. */
+  .call-button{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    min-height:58px; padding:0 28px;
+    background:var(--accent-action); color:var(--on-violet);
+    border-radius:var(--radius); text-decoration:none;
+    box-shadow:var(--sh-btn);
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+  }
+  .call-button:hover{ background:var(--accent-hover); color:var(--on-violet); }
+  .call-button svg{ width:19px; height:19px; flex-shrink:0; }
+  .call-button .lbl{ display:none }
+  .call-button .num{ font-size:var(--fs-450); font-weight:700; letter-spacing:-.01em; }
+  .result .call-button{
+    display:flex; width:100%; margin-top:22px; min-height:62px;
+  }
+  .result .call-button .num{ font-size:20px; }
+
+  /* ───────── PIED ───────── */
+  footer{
+    background:var(--surface); border-top:.8px solid var(--line);
+    padding:clamp(28px,3.06vw,44px) var(--gutter) 60px;
+  }
+  /* Meme fuite depuis base.css : `.foot-inner{ max-width:820px; text-align:
+     center }`. Le pied de la planche est cale a gauche. */
+  .foot-inner{ max-width:var(--maxw); margin:0 auto; text-align:left; }
+  .foot-links{ display:flex; flex-wrap:wrap; gap:8px 24px; margin:0; }
+  .foot-links a, .foot-phone a{
+    font-size:var(--fs-250); font-weight:500; color:var(--accent-700); text-decoration:none;
+  }
+  .foot-links a:hover, .foot-phone a:hover{ text-decoration:underline; }
+  .foot-phone{ margin:8px 0 0; }
+  .foot-disclaimer{ font-size:var(--fs-150); color:var(--ink-soft); margin:20px 0 0; line-height:1.7; }
+  .foot-disclaimer strong{ color:var(--ink-strong); font-weight:600; }
+  .foot-copy{ font-size:var(--fs-150); color:var(--ink-soft); margin:16px 0 0; line-height:1.55; }
+
+  /* ───────── BARRE COLLANTE ─────────
+     Absente de la planche : elle existe pour les 55 % qui ne descendent jamais
+     jusqu'au bloc d'appel (Clarity : 44,8 % de profondeur moyenne). Le moteur
+     l'arme apres la premiere reponse et l'eteint quand le bouton du resultat
+     est a l'ecran. */
+  .sticky-cta{
+    position:fixed; left:0; right:0; bottom:0; z-index:30;
+    padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
+    background:rgba(245,244,255,.94);
+    -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+    border-top:.8px solid var(--line);
+    transform:translateY(115%); transition:transform .25s ease;
+  }
+  .sticky-cta.visible{ transform:translateY(0); }
+  .sticky-cta .call-button{ display:flex; width:100%; max-width:var(--maxw); margin:0 auto; box-shadow:none; }
+  body:has(.sticky-cta.visible){ padding-bottom:96px; }
+  @media (min-width:900px){
+    .sticky-cta{ display:none }
+    body:has(.sticky-cta.visible){ padding-bottom:0 }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001s !important; transition-duration:.001s !important }
+  }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--accent-ring); outline-offset:2px; border-radius:var(--radius);
+  }
+
+  /* Le texte decoratif n'invite pas au tap : 474 taps sur 943 tombaient a
+     cote, mesure sur Clarity. */
+  .hero h1, .hero .lede, .question h2, .question .qsub, .quiz-top, .progress,
+  .foot-disclaimer, .stat-fig, .stat-lbl{
+    cursor:default; user-select:none; -webkit-user-select:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+
+
+
+body{ font-family:var(--font-body); background:var(--page); color:var(--ink); }
+h1,h2,h3{ font-family:var(--font-display); }
+
+/* ───────── L'ECHELLE, POSEE APRES base.css ─────────
+   composeStyles() assemble dans cet ordre :
+
+       [ :root du theme ] [ base.css ] [ style de l'archetype ] [ le reste du theme ]
+
+   base.css porte son propre `:root` avec --fs-100 a --fs-800. A specificite
+   egale, c'est le dernier qui gagne : tant que l'echelle vivait dans le
+   premier `:root` du theme, base.css l'ecrasait en silence. Les crans que
+   base ne connait pas (--fs-150, -250, -350, -450, -550) passaient, les huit
+   autres non — d'ou des pastilles de preuve a 16 px la ou la planche est a 13,
+   et des chiffres de bandeau a 36 au lieu de 30.
+
+   Ce second bloc tombe dans la zone composee en dernier, donc il gagne.
+   Treize tailles : chacune est posee a un endroit precis sur la planche, et en
+   arrondir une deplace la hierarchie. */
+:root{
+  --fs-100: 11px;   /* la baseline sous le logo */
+  --fs-150: 12px;   /* mentions, badge, surtitre, pied */
+  --fs-200: 13px;   /* pastilles de preuve, horaires, etapes de chargement */
+  --fs-250: 14px;   /* meta, liens de pied, sous-titres du bandeau */
+  --fs-300: 15px;   /* corps des cartes, nom de marque */
+  --fs-350: 16px;   /* chapeau du hero, lede de section */
+  --fs-400: 17px;   /* libelle de reponse */
+  --fs-450: 19px;   /* h3, gros bouton d'appel */
+  --fs-500: 21px;   /* la question */
+  --fs-550: 25px;   /* h2 de l'appel */
+  --fs-600: 27px;   /* h2 « comment ca marche » */
+  --fs-700: 30px;   /* chiffres du bandeau */
+  --fs-800: 34px;   /* h1 mobile */
+  --fs-base: 16px;
+}
+
 </style>
 </head>
 <body>
 
-<!-- ───────── HEADER ───────── -->
-<header>
-  <div class="header-inner">
-    <a class="brand" href="#top">
-      <span class="brand-mark">
-        <img src="assets/logo.svg" alt="Nexo Quote" width="80" height="80" />
+<!-- En-tete : 71 px, le nom a gauche, le numero a droite. Le numero est un
+     <a href="tel:"> — c'est ce qui declenche trackCallClick avec
+     placement="header". -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="topbar-brand" href="#top">
+      <img class="topbar-logo" src="assets/logo.svg" alt="" width="30" height="30" />
+      <span class="topbar-names">
+        <span class="topbar-name">Nexo Quote</span>
+        <span class="topbar-tag">Smart Auto Savings</span>
       </span>
-      <span class="brand-text">Nexo Quote<small>Smart Auto Savings</small></span>
     </a>
-    <a class="header-phone" href="tel:+18666970754">
-      <span class="ico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
-        </svg>
-      </span>
-      <span class="num">(866) 697-0754</span>
+    <a class="topbar-phone" href="tel:+18666970754" data-placement="header">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>(866) 697-0754</span>
     </a>
   </div>
 </header>
 
-<!-- ───────── HERO ───────── -->
-<section class="hero" id="top">
-  <div class="hero-inner">
-    <h1>Drivers Over 50 Are Quietly Cutting Their Car Insurance Bills <em>This Year</em></h1>
-    <p class="lede">Answer A Few Questions To Find How Much You Could Save</p>
-  </div>
-</section>
+<main id="top">
 
-<!-- ───────── QUIZ ───────── -->
-<div class="quiz-wrap">
-  <div class="quiz" id="quiz">
+  <!-- ── HERO ─────────────────────────────────────────────────────────────
+       Trois blocs, pas deux. A 390 ils se suivent dans l'ordre du DOM —
+       recit, TUNNEL, puis photo — pour que le tunnel soit visible sans avoir
+       a franchir une photo de 260 px. A partir de 900 px la grille les
+       replace comme sur la planche : recit et photo a gauche, tunnel a
+       droite. -->
+  <section class="hero">
+    <div class="hero-in">
 
-    <div class="quiz-top">
-      <span id="step-label">Question 1 of 3</span>
-      <span class="quiz-secure">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        Free &amp; secure
-      </span>
-    </div>
+      <div class="hero-copy">
+        <span class="badge">2026 rate review</span>
+        <h1>Drivers over 50 are paying <em>less</em> for the same coverage</h1>
+        <p class="lede">Answer three questions and we will check which 2026 programs you may qualify for. It takes under a minute, costs nothing, and there is no obligation to switch.</p>
+    <ul class="hero-hub-proofs">
+      <li><strong>4.8</strong><span>/ 5 from 12,000+ drivers</span></li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span>Licensed in all 50 states</span></li>
+      <li><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8.5 12.5 11 15 15.5 9.5"/></svg></span><span>Free, no obligation</span></li>
+    </ul>
+      </div>
 
-    <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+      <!-- ── LE TUNNEL ───────────────────────────────────────────────────
+           Les ids sont ceux auxquels le moteur se lie : #quiz, #quiz-pane,
+           #step-label, #progress-bar, #quiz-back, #loading, #result,
+           #callback-form, #callback-thanks, #quiz-restart.
+           Ne pas les renommer. -->
+      <div class="quiz-wrap">
+        <div class="quiz" id="quiz">
 
-    <!-- Q1 -->
+          <div class="quiz-pane active" id="quiz-pane">
+            <div class="quiz-top">
+              <span id="step-label">Question 1 of 3</span>
+              <span class="quiz-secure">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Secure
+              </span>
+            </div>
+            <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+
       <div class="question active" data-step="1">
         <h2>Are you currently insured?</h2>
         <div class="options stack">
-          <button class="opt" data-answer="yes">Yes</button>
-          <button class="opt" data-answer="no">No</button>
+          <button class="opt" type="button" data-answer="yes">Yes</button>
+          <button class="opt" type="button" data-answer="no">No</button>
         </div>
       </div>
 
-      <!-- Q2 -->
       <div class="question" data-step="2">
         <h2>How many vehicles do you have?</h2>
         <p class="qsub">Multi-vehicle households often save more.</p>
         <div class="options row">
-          <button class="opt" data-answer="1">1</button>
-          <button class="opt" data-answer="2">2</button>
-          <button class="opt" data-answer="3+">3+</button>
+          <button class="opt" type="button" data-answer="1">1</button>
+          <button class="opt" type="button" data-answer="2">2</button>
+          <button class="opt" type="button" data-answer="3+">3+</button>
         </div>
       </div>
 
-      <!-- Q3 -->
       <div class="question" data-step="3">
         <h2>Do you own your home?</h2>
         <p class="qsub">Homeowners may unlock additional discounts.</p>
         <div class="options stack">
-          <button class="opt" data-answer="yes">Yes</button>
-          <button class="opt" data-answer="no">No</button>
+          <button class="opt" type="button" data-answer="yes">Yes</button>
+          <button class="opt" type="button" data-answer="no">No</button>
         </div>
       </div>
 
-    <!-- LOADING -->
-    <div class="loading" id="loading">
-      <h2>Reviewing your answers</h2>
-      <p class="qsub">Checking 2026 programs in <span id="state-name">your area</span>.</p>
-      <div class="load-list">
-        <div class="load-row" data-load="1">
+            <div class="quiz-foot">
+              <button type="button" class="quiz-back" id="quiz-back" hidden>&#8592; Back</button>
+              <span class="quiz-note">No email required.</span>
+            </div>
+          </div>
+
+          <div class="loading" id="loading">
+            <h2>Reviewing your answers</h2>
+            <p class="msg">Checking 2026 programs in <span data-state-name>your area</span>.</p>
+        <div class="load-row" data-load="1" data-delay="900">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
           <span>Reviewing your answers</span>
         </div>
-        <div class="load-row" data-load="2">
+        <div class="load-row" data-load="2" data-delay="1500">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
           <span>Checking 2026 programs</span>
         </div>
-        <div class="load-row" data-load="3">
+        <div class="load-row" data-load="3" data-delay="1300">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
           <span>Matching you to an agent</span>
         </div>
+            <div class="sweep"><span></span></div>
+          </div>
+
+          <div class="result" id="result">
+            <span class="pill-match">Match found</span>
+            <h2>You may qualify for a discounted plan</h2>
+      <p class="msg">A licensed agent can confirm your rate on the phone in a few minutes. Calling is the fastest way to lock it in.</p>
+
+            <a class="call-button" href="tel:+18666970754" data-placement="result">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span class="lbl">Tap to call</span>
+              <span class="num">(866) 697-0754</span>
+            </a>
+            <p class="agents-now">Agents available now · Mon–Fri 8am–9pm ET</p>
+
+            <div class="or-line"><span>or have an agent call you</span></div>
+            <form class="callback-form" id="callback-form" novalidate>
+        <input type="text" name="name" placeholder="First name" autocomplete="given-name" required />
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone number" autocomplete="tel" inputmode="tel" required />
+        <input type="text" name="zip" placeholder="ZIP code" autocomplete="postal-code" inputmode="numeric" required />
       </div>
+      <p class="form-error" role="alert" hidden></p>
+      <button type="submit" class="form-submit">Request a callback</button>
+      <p class="form-consent">By submitting you agree to be contacted about insurance quotes. You can opt out at any time.</p>
+            </form>
+            <div class="callback-thanks" id="callback-thanks" role="status" hidden>
+      <p class="thanks-title">Thanks — an agent will call you shortly.</p>
+      <p class="thanks-body">If you would rather not wait, call (866) 697-0754.</p>
+            </div>
+
+            <button type="button" class="quiz-restart" id="quiz-restart">Start over</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Photo + « on peut aussi en parler tout de suite ». Sur mobile ce
+           bloc passe APRES le tunnel. -->
+      <div class="hero-media">
+    <figure class="slot filled">
+      <img src="assets/nexo-review/hero-driver.webp" alt="A driver in his sixties at the wheel of his car, in daylight" width="1100" height="520" loading="eager" decoding="async" />
+    </figure>
+        <p class="talk-first">Prefer to talk first? Call and a licensed agent will run the same check with you. Mon-Fri 8am-9pm ET, Sat 9am-7pm ET.</p>
+      </div>
+
     </div>
+  </section>
 
-      <!-- RESULT -->
-      <div class="result" id="result">
-        <h2>Congratulations !</h2>
-        <p class="msg"><strong>You May Be Eligible to Enroll in a Heavily Discounted Insurance Plan</strong></p>
-        <p class="msg">Click The Number Below To Call And Secure Your Deal.</p>
-
-      <a href="tel:+18666970754" class="call-button">
-        <span class="lbl">Tap to call</span>
-        <span class="num">(866) 697-0754</span>
-      </a>
+  <!-- ── BANDEAU CHIFFRE ───────────────────────────────────────────────── -->
+<section class="stats">
+  <div class="stats-in">
+    <div class="stat">
+      <div class="stat-fig">12,000+</div>
+      <p class="stat-lbl">drivers rated us 4.8 out of 5</p>
     </div>
-
-  </div>
-</div>
-
-<!-- ───────── TRUST STRIP ───────── -->
-<div class="trust-strip">
-  <strong>4.8 / 5</strong> from 12,000+ drivers
-  <span class="sep">·</span>
-  Licensed in <strong>all 50 states</strong>
-  <span class="sep">·</span>
-  <strong>Free</strong> &amp; no obligation
-</div>
-
-<!-- ───────── TESTIMONIALS ───────── -->
-<section class="section">
-  <h2>What other drivers are saying</h2>
-
-  <div class="quote">
-    <p>I was paying $189 a month. After one phone call, the agent set me up with the same coverage for $112. I really wish I had called sooner.</p>
-    <p class="who"><strong>Jessica R.</strong>, 58 — Tampa, FL</p>
-  </div>
-
-  <div class="quote">
-    <p>The agent was patient and walked me through everything. No pressure at all. I ended up saving almost $60 a month on my truck.</p>
-    <p class="who"><strong>Marcus D.</strong>, 64 — Columbus, OH</p>
+    <div class="stat">
+      <div class="stat-fig">50 states</div>
+      <p class="stat-lbl">licensed agents, coast to coast</p>
+    </div>
+    <div class="stat">
+      <div class="stat-fig">Under a minute</div>
+      <p class="stat-lbl">three questions, no email needed</p>
+    </div>
   </div>
 </section>
 
-<!-- ───────── CALL BAND ───────── -->
-<section class="call-band">
-  <h2>Ready to see how much you could save?</h2>
-  <p>Speak with a licensed agent — no cost, no obligation.</p>
-  <a href="tel:+18666970754" class="call-button">
-    <span class="lbl">Tap to call</span>
-    <span class="num">(866) 697-0754</span>
-  </a>
-  <p class="hours">Monday – Friday 8am – 9pm ET · Saturday 9am – 7pm ET</p>
+  <!-- ── LA BANDE ASSUREURS ──────────────────────────────────────────────── -->
+<section class="carriers">
+  <div class="carriers-in">
+    <h2>Quotes compared across national and regional carriers</h2>
+    <div class="carrier-grid">
+      <div class="carrier"><img src="assets/nexo-review/carriers/progressive.svg" alt="Progressive" width="190" height="32" loading="lazy" decoding="async" /></div>
+      <div class="carrier"><img src="assets/nexo-review/carriers/geico.svg" alt="GEICO" width="190" height="32" loading="lazy" decoding="async" /></div>
+      <div class="carrier"><img src="assets/nexo-review/carriers/allstate.svg" alt="Allstate" width="190" height="32" loading="lazy" decoding="async" /></div>
+      <div class="carrier"><img src="assets/nexo-review/carriers/liberty-mutual.svg" alt="Liberty Mutual" width="190" height="32" loading="lazy" decoding="async" /></div>
+      <div class="carrier"><img src="assets/nexo-review/carriers/nationwide.svg" alt="Nationwide" width="190" height="32" loading="lazy" decoding="async" /></div>
+    </div>
+  </div>
 </section>
 
-<!-- ───────── FOOTER ───────── -->
+  <!-- ── COMMENT CA MARCHE ─────────────────────────────────────────────── -->
+<section class="how">
+  <div class="how-in">
+    <h2>How it works</h2>
+    <p class="lede">No forms to fill out before you see whether it is worth your time.</p>
+    <div class="how-list">
+    <div class="how-step">
+      <span class="how-num">01</span>
+      <h3>Answer three questions</h3>
+      <p>Coverage status, vehicles, homeownership. No email, no personal details up front.</p>
+    </div>
+    <div class="how-step">
+      <span class="how-num">02</span>
+      <h3>We check 2026 programs</h3>
+      <p>Your answers are matched against discount programs available in your state.</p>
+    </div>
+    <div class="how-step">
+      <span class="how-num">03</span>
+      <h3>Confirm on the phone</h3>
+      <p>A licensed agent quotes the real number. Switch only if it beats what you pay now.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ── L'APPEL ───────────────────────────────────────────────────────── -->
+  <section class="band">
+    <div class="band-card">
+      <div class="band-copy">
+        <h2>Talk to a licensed agent</h2>
+        <p>No cost, no obligation, and no switch unless the numbers make sense for you.</p>
+        <a class="call-button" href="tel:+18666970754" data-placement="band">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span class="lbl">Tap to call</span>
+          <span class="num">(866) 697-0754</span>
+        </a>
+        <p class="hours">Mon-Fri 8am-9pm ET · Sat 9am-7pm ET</p>
+      </div>
+    <figure class="slot filled">
+      <img src="assets/nexo-review/agent-headset.webp" alt="A licensed agent taking a call at his desk" width="1000" height="600" loading="lazy" decoding="async" />
+    </figure>
+    </div>
+  </section>
+
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-links">
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms &amp; Conditions</a>
-      <a href="tel:+18666970754">(866) 697-0754</a>
+      <a href="terms-of-service.html">Terms & Conditions</a>
+      <a href="tel:+18666970754" data-placement="footer">(866) 697-0754</a>
     </div>
-    <p class="foot-disclaimer">
-      <strong>Advertising Disclosure.</strong> Nexo Quote is a free comparison service.
-      We may be compensated by providers featured on this site, which may influence which offers appear.
-      Savings figures are based on driver-reported averages; individual results vary based on coverage, vehicle, driving history, state and other factors.
-      This is an advertisement, not a news article. By calling, you may speak with a licensed insurance agent.
-    </p>
+    <p class="foot-disclaimer"><strong>Advertising Disclosure.</strong> Nexo Quote is a free comparison service. We may be compensated by providers featured on this site, which may influence which offers appear. Savings figures are based on driver-reported averages; individual results vary based on coverage, vehicle, driving history, state and other factors. This is an advertisement, not a news article. By calling, you may speak with a licensed insurance agent.</p>
     <p class="foot-copy">© 2026 Nexo Quote. All rights reserved.</p>
   </div>
 </footer>
 
+<!-- Barre collante : le moteur l'arme apres la premiere reponse. -->
+<div class="sticky-cta" id="sticky-cta">
+  <a class="call-button" href="tel:+18666970754" data-placement="sticky">
+    <span class="lbl">Tap to call</span>
+    <span class="num">(866) 697-0754</span>
+  </a>
+</div>
+
+<script>window.__LP_STATES={"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","DC":"District of Columbia"};</script>
 <script>
-(function(){
-  const params = new URLSearchParams(window.location.search);
-  const stateMap = {
-    AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',
-    CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',
-    IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',
-    ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',
-    MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',
-    NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',
-    NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',
-    PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',
-    TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',
-    WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',DC:'District of Columbia'
-  };
-  let stateName = params.get('state') || params.get('region');
-  const stateCode = params.get('shortStateValue') || params.get('stateCode');
-  if (!stateName && stateCode && stateMap[stateCode.toUpperCase()]) {
-    stateName = stateMap[stateCode.toUpperCase()];
-  }
-  if (stateName) {
-    const pretty = stateName.charAt(0).toUpperCase() + stateName.slice(1).toLowerCase();
-    const el = document.getElementById('state-name');
-    if (el) el.textContent = pretty;
+/**
+ * Moteur du tunnel — archétype quote-review.
+ *
+ * Reprend celui de quiz-call et lui ajoute ce que la planche « Nexo Quote
+ * Landing » contient et que la première version n'avait pas repris : le retour
+ * en arrière, l'écran « Match found », le formulaire de rappel, l'état de
+ * confirmation et « Start over ».
+ *
+ * ── La règle INP, qui est la raison d'être de cette réécriture ──────────────
+ * Clarity mesurait l'INP à 1698 ms sur la page écrite à la main, avec 24
+ * re-taps sur des réponses déjà sélectionnées : on tape, rien ne bouge, on
+ * retape. Deux lignes en étaient la cause — un appel tracker synchrone dans le
+ * gestionnaire de clic, et un setTimeout de 220 ms avant le passage à l'étape
+ * suivante, qui posait par construction un plancher de 220 ms sous l'INP.
+ *
+ * Donc : le gestionnaire fait le minimum de travail DOM synchrone puis rend la
+ * main. Tout le reste — tracking, analytics — passe après la peinture.
+ * Ne jamais ajouter de travail sur le chemin synchrone.
+ */
+(function () {
+  'use strict';
+
+  var quiz = document.getElementById('quiz');
+  if (!quiz) return;
+
+  var questions = Array.prototype.slice.call(quiz.querySelectorAll('.question'));
+  var TOTAL = questions.length;
+  if (TOTAL === 0) return;
+
+  var stepLabel = document.getElementById('step-label');
+  var bar = document.getElementById('progress-bar');
+  var quizPane = document.getElementById('quiz-pane');
+  var loadingEl = document.getElementById('loading');
+  var resultEl = document.getElementById('result');
+  var stickyCta = document.getElementById('sticky-cta');
+  var backBtn = document.getElementById('quiz-back');
+  var form = document.getElementById('callback-form');
+  var thanksEl = document.getElementById('callback-thanks');
+  var restartBtn = document.getElementById('quiz-restart');
+
+  var current = 1;
+  var answers = {};
+  var timers = [];
+
+  // ── Travail différé ───────────────────────────────────────────────────────
+  // S'exécute après la peinture suivante : rien ici ne peut retarder la
+  // réponse visuelle à un tap. rAF puis setTimeout(0) : la frame est validée,
+  // puis la tâche part.
+  function afterPaint(fn) {
+    requestAnimationFrame(function () {
+      setTimeout(fn, 0);
+    });
   }
 
   function tk(fn, meta) {
     try {
       var cb = window.tkCallback;
       if (cb && typeof cb[fn] === 'function') cb[fn](meta || {});
-    } catch (e) {}
-  }
-
-  const TOTAL = 3;
-  let current = 1;
-  const answers = {};
-  const stepLabel = document.getElementById('step-label');
-  const bar = document.getElementById('progress-bar');
-  const questions = document.querySelectorAll('.question');
-  const loadingEl = document.getElementById('loading');
-  const resultEl = document.getElementById('result');
-  const quizCard = document.getElementById('quiz');
-
-  function updateProgress(){
-    bar.style.width = ((current - 1) / TOTAL * 100) + '%';
-    stepLabel.textContent = 'Question ' + Math.min(current, TOTAL) + ' of ' + TOTAL;
-  }
-  updateProgress();
-
-  function goTo(n){
-    questions.forEach(q => q.classList.remove('active'));
-    const target = document.querySelector('.question[data-step="'+n+'"]');
-    if (target) target.classList.add('active');
-    current = n;
-    updateProgress();
-    if (window.innerWidth < 720) {
-      quizCard.scrollIntoView({behavior:'smooth', block:'start'});
+    } catch (e) {
+      /* le tracker ne doit jamais pouvoir casser le tunnel */
     }
   }
 
-  document.querySelectorAll('.opt').forEach(btn => {
-    btn.addEventListener('click', function(){
-      const q = this.closest('.question');
-      const step = parseInt(q.dataset.step, 10);
-      q.querySelectorAll('.opt').forEach(o => o.classList.remove('selected'));
-      this.classList.add('selected');
-      answers['q'+step] = this.dataset.answer;
+  function later(fn, ms) {
+    var id = setTimeout(fn, ms);
+    timers.push(id);
+    return id;
+  }
+  function clearTimers() {
+    for (var i = 0; i < timers.length; i++) clearTimeout(timers[i]);
+    timers = [];
+  }
+
+  // ── L'État depuis l'URL ───────────────────────────────────────────────────
+  var params = new URLSearchParams(window.location.search);
+  var stateName = params.get('state') || params.get('region');
+  var stateCode = params.get('shortStateValue') || params.get('stateCode');
+  if (!stateName && stateCode && window.__LP_STATES) {
+    stateName = window.__LP_STATES[stateCode.toUpperCase()];
+  }
+  if (stateName) {
+    var pretty = stateName.charAt(0).toUpperCase() + stateName.slice(1).toLowerCase();
+    Array.prototype.forEach.call(document.querySelectorAll('[data-state-name]'), function (el) {
+      el.textContent = pretty;
+    });
+  }
+
+  // ── Progression ───────────────────────────────────────────────────────────
+  function paintProgress() {
+    if (bar) bar.style.width = ((current - 1) / TOTAL) * 100 + '%';
+    if (stepLabel) stepLabel.textContent = 'Question ' + Math.min(current, TOTAL) + ' of ' + TOTAL;
+    if (backBtn) backBtn.hidden = current <= 1;
+  }
+  paintProgress();
+  trackQuestionView(1);
+
+  function trackQuestionView(n) {
+    var q = null;
+    for (var i = 0; i < questions.length; i++) {
+      if (questions[i].dataset.step === String(n)) { q = questions[i]; break; }
+    }
+    var h2 = q && q.querySelector('h2');
+    var label = h2 ? String(h2.textContent || '').replace(/\s+/g, ' ').trim() : ('Question ' + n);
+    afterPaint(function () {
+      tk('trackStep', { index: n, key: 'q' + n, label: label });
+    });
+  }
+
+  function show(n) {
+    for (var i = 0; i < questions.length; i++) {
+      questions[i].classList.toggle('active', questions[i].dataset.step === String(n));
+    }
+    current = n;
+    paintProgress();
+    trackQuestionView(n);
+  }
+
+  // ── Le chemin du tap — garder cette fonction ennuyeuse ─────────────────────
+  function onAnswer(btn) {
+    var q = btn.closest('.question');
+    if (!q) return;
+    var step = parseInt(q.dataset.step, 10);
+
+    // Déjà répondu et déjà passé à la suite : ignorer plutôt que rejouer.
+    if (step !== current) return;
+
+    var siblings = q.querySelectorAll('.opt');
+    for (var i = 0; i < siblings.length; i++) siblings[i].classList.remove('selected');
+    btn.classList.add('selected');
+    answers['q' + step] = btn.dataset.answer;
+
+    if (step < TOTAL) show(step + 1);
+    else startLoading();
+
+    // Tout ce qui suit est invisible pour l'utilisateur : ça attend la peinture.
+    afterPaint(function () {
       tk('trackClickButton', {
         step: step,
-        answer: this.dataset.answer,
+        answer: btn.dataset.answer,
         state: stateName || undefined,
       });
-      setTimeout(() => {
-        if (step < TOTAL) goTo(step + 1);
-        else startLoading();
-      }, 220);
     });
-  });
+  }
 
-  function startLoading(){
-    questions.forEach(q => q.classList.remove('active'));
-    loadingEl.classList.add('active');
-    bar.style.width = '100%';
-    stepLabel.textContent = 'Checking eligibility…';
+  // Un seul écouteur sur la carte plutôt qu'un par bouton : moins de
+  // gestionnaires à attacher au chargement, et les options ajoutées plus tard
+  // fonctionnent quand même.
+  quiz.addEventListener(
+    'click',
+    function (ev) {
+      var t = ev.target;
+      var btn = t.closest ? t.closest('.opt') : null;
+      if (btn && quiz.contains(btn)) onAnswer(btn);
+    },
+    { passive: true },
+  );
 
-    const rows = document.querySelectorAll('.load-row');
-    const checkSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
-    const spinSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>';
-    const delays = [900, 1500, 1300];
+  // ── Retour en arrière ─────────────────────────────────────────────────────
+  // La planche le pose à gauche du « No email required », visible dès la
+  // deuxième question. Il ne réinitialise pas la réponse précédente : on la
+  // retrouve sélectionnée, ce qui évite de retaper pour rien.
+  if (backBtn) {
+    backBtn.addEventListener('click', function () {
+      if (current <= 1) return;
+      show(current - 1);
+    });
+  }
 
-    let idx = 0;
-    function next(){
+  // ── Théâtre de chargement ─────────────────────────────────────────────────
+  var CHECK_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+  var SPIN_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>';
+
+  function startLoading() {
+    for (var i = 0; i < questions.length; i++) questions[i].classList.remove('active');
+    if (quizPane) quizPane.classList.remove('active');
+    if (loadingEl) loadingEl.classList.add('active');
+    if (bar) bar.style.width = '100%';
+
+    var rows = loadingEl ? loadingEl.querySelectorAll('.load-row') : [];
+    if (!rows.length) return showResult();
+
+    var idx = 0;
+    (function next() {
       if (idx > 0) {
-        rows[idx-1].classList.remove('in-progress');
-        rows[idx-1].classList.add('done');
-        rows[idx-1].querySelector('.ico').innerHTML = checkSvg;
+        var prev = rows[idx - 1];
+        prev.classList.remove('in-progress');
+        prev.classList.add('done');
+        var pIco = prev.querySelector('.ico');
+        if (pIco) pIco.innerHTML = CHECK_SVG;
       }
       if (idx < rows.length) {
-        rows[idx].classList.add('in-progress');
-        rows[idx].querySelector('.ico').innerHTML = spinSvg;
-        setTimeout(() => { idx++; next(); }, delays[idx]);
+        var row = rows[idx];
+        row.classList.add('in-progress');
+        var ico = row.querySelector('.ico');
+        if (ico) ico.innerHTML = SPIN_SVG;
+        var delay = parseInt(row.dataset.delay, 10) || 1200;
+        idx++;
+        later(next, delay);
       } else {
-        setTimeout(showResult, 500);
+        later(showResult, 400);
       }
-    }
-    next();
+    })();
   }
 
-  function showResult(){
-    tk('registerConversion', {
-      eventType: 'lead',
-      q1: answers.q1,
-      q2: answers.q2,
-      q3: answers.q3,
-      state: stateName || undefined,
+  /**
+   * La barre collante existe pour les 55 % de visiteurs qui ne descendent
+   * jamais jusqu'au bloc d'appel (Clarity : 44,8 % de profondeur moyenne).
+   * Elle ne doit pas s'allumer tant que le bouton d'appel du résultat est à
+   * l'écran, sinon le même numéro apparaît deux fois, empilé, et se lit comme
+   * un bug d'affichage.
+   */
+  function armStickyCta() {
+    if (!stickyCta) return;
+    var anchor = resultEl && resultEl.querySelector('.call-button');
+    if (!anchor || typeof IntersectionObserver !== 'function') {
+      stickyCta.classList.add('visible');
+      return;
+    }
+    new IntersectionObserver(
+      function (entries) {
+        stickyCta.classList.toggle('visible', !entries[0].isIntersecting);
+      },
+      { threshold: 0.4 },
+    ).observe(anchor);
+  }
+
+  function showResult() {
+    if (loadingEl) loadingEl.classList.remove('active');
+    if (resultEl) resultEl.classList.add('active');
+    afterPaint(armStickyCta);
+
+    var payload = { eventType: 'lead', state: stateName || undefined };
+    for (var k in answers) if (Object.prototype.hasOwnProperty.call(answers, k)) payload[k] = answers[k];
+    afterPaint(function () {
+      tk('registerConversion', payload);
     });
-    loadingEl.classList.remove('active');
-    resultEl.classList.add('active');
-    stepLabel.textContent = liveCallers.toLocaleString() + ' drivers called today';
-    stepLabel.classList.add('live-count');
-    if (window.innerWidth < 720) {
-      quizCard.scrollIntoView({behavior:'smooth', block:'start'});
-    }
   }
 
-  // ── Dynamic caller count ──────────────────────────────
-  function getCallerCount() {
-    const now = new Date();
-    const dayKey = now.getFullYear() * 366 + now.getMonth() * 31 + now.getDate();
-    const seed = Math.sin(dayKey) * 10000;
-    const baseRand = seed - Math.floor(seed);
-    const baseTotal = 280 + Math.floor(baseRand * 180);
-    const hourFraction = (now.getHours() * 60 + now.getMinutes()) / (24 * 60);
-    return Math.max(40, Math.floor(baseTotal * (0.3 + 0.7 * hourFraction)));
-  }
-  let liveCallers = getCallerCount();
-  const callersCountEl = document.getElementById('callers-count');
-  if (callersCountEl) callersCountEl.textContent = liveCallers.toLocaleString();
-  setInterval(() => {
-    if (Math.random() < 0.3) {
-      liveCallers++;
-      if (callersCountEl) callersCountEl.textContent = liveCallers.toLocaleString();
-      if (resultEl.classList.contains('active')) {
-        stepLabel.textContent = liveCallers.toLocaleString() + ' drivers called today';
+  // ── Le formulaire de rappel ───────────────────────────────────────────────
+  // Il part vers l'endpoint déclaré dans le spec (`callbackForm.endpoint`).
+  // SANS endpoint, la demande n'est transmise qu'au tracker, en métadonnée de
+  // conversion : elle n'atterrit dans aucun CRM. C'est dit tel quel dans la
+  // remise, pas maquillé ici.
+  if (form) {
+    var endpoint = form.dataset.endpoint || '';
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+
+      var fd = new FormData(form);
+      var lead = {};
+      fd.forEach(function (v, k) {
+        lead[k] = String(v).trim();
+      });
+
+      // Validation minimale, côté navigateur : `required` fait le reste.
+      var digits = (lead.phone || '').replace(/\D/g, '');
+      var err = form.querySelector('.form-error');
+      if (digits.length < 10) {
+        if (err) {
+          err.textContent = 'Enter a phone number we can reach you on.';
+          err.hidden = false;
+        }
+        var phoneField = form.querySelector('[name="phone"]');
+        if (phoneField) phoneField.focus();
+        return;
       }
-    }
-  }, 12000);
+      if (err) err.hidden = true;
 
-  document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      var phone = (a.getAttribute('href') || '').replace('tel:', '');
-      var placement = a.classList.contains('call-button')
-        ? 'cta'
-        : a.classList.contains('header-phone')
-          ? 'header'
-          : 'footer';
-      tk('trackCallClick', {
-        phone: phone,
-        placement: placement,
-        state: stateName || 'unknown',
-        quiz_complete: !!answers.q3,
+      // Le basculement visuel d'abord, l'envoi ensuite : même règle que sur
+      // le chemin du tap.
+      form.hidden = true;
+      if (thanksEl) thanksEl.hidden = false;
+
+      afterPaint(function () {
+        var meta = {
+          eventType: 'callback_request',
+          state: stateName || undefined,
+          phone: lead.phone,
+          zip: lead.zip,
+          name: lead.name,
+        };
+        for (var k in answers) if (Object.prototype.hasOwnProperty.call(answers, k)) meta[k] = answers[k];
+        tk('registerConversion', meta);
+
+        if (endpoint) {
+          try {
+            var body = JSON.stringify(meta);
+            // sendBeacon survit à une navigation immédiate (l'utilisateur qui
+            // appelle dans la foulée) ; fetch sert de repli.
+            if (navigator.sendBeacon) {
+              navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
+            } else {
+              fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: body,
+                keepalive: true,
+              }).catch(function () {});
+            }
+          } catch (e) {
+            /* une demande de rappel perdue ne doit pas casser la page */
+          }
+        }
       });
     });
-  });
-})();
-</script>
+  }
 
+  // ── Recommencer ───────────────────────────────────────────────────────────
+  if (restartBtn) {
+    restartBtn.addEventListener('click', function () {
+      clearTimers();
+      answers = {};
+      var sel = quiz.querySelectorAll('.opt.selected');
+      for (var i = 0; i < sel.length; i++) sel[i].classList.remove('selected');
+      var rows = loadingEl ? loadingEl.querySelectorAll('.load-row') : [];
+      for (var j = 0; j < rows.length; j++) {
+        rows[j].classList.remove('done', 'in-progress');
+        var ico = rows[j].querySelector('.ico');
+        if (ico) ico.innerHTML = '';
+      }
+      if (resultEl) resultEl.classList.remove('active');
+      if (loadingEl) loadingEl.classList.remove('active');
+      if (quizPane) quizPane.classList.add('active');
+      if (form) form.hidden = false;
+      if (thanksEl) thanksEl.hidden = true;
+      if (stickyCta) stickyCta.classList.remove('visible');
+      show(1);
+      quiz.scrollIntoView({ block: 'nearest' });
+    });
+  }
+
+  // ── Compteur « callers today » : retiré ───────────────────────────────────
+  // Il était inventé — une fonction le dérivait de l'heure du jour, puis un
+  // setInterval l'incrémentait une fois sur trois toutes les 12 secondes.
+  // Aucune de ces personnes n'existe. Sur un lead d'assurance américain c'est
+  // une activité en temps réel fabriquée. Il revient le jour où il lit un vrai
+  // compteur servi par le tracker.
+
+  // ── Suivi des appels ──────────────────────────────────────────────────────
+  document.addEventListener(
+    'click',
+    function (ev) {
+      var a = ev.target.closest ? ev.target.closest('a[href^="tel:"]') : null;
+      if (!a) return;
+      var placement = a.dataset.placement || 'unknown';
+      afterPaint(function () {
+        tk('trackCallClick', {
+          phone: (a.getAttribute('href') || '').replace('tel:', ''),
+          placement: placement,
+          state: stateName || 'unknown',
+          quiz_complete: Object.keys(answers).length >= TOTAL,
+        });
+      });
+    },
+    { passive: true },
+  );
+})();
+
+</script>
 </body>
 </html>
