@@ -19,11 +19,10 @@
   function loadTracker() {
     if (document.querySelector('script[src*="/t/tracker.js"]')) return;
     var s = document.createElement('script');
-    s.src = 'https://track.nexoquote.com/t/tracker.js?v=20260909r';
+    s.src = 'https://track.nexoquote.com/t/tracker.js?v=20260909s';
     s.async = true;
     s.setAttribute('data-campaign', 'lp1');
     s.setAttribute('data-mode', 'direct');
-    s.setAttribute('data-no-viewcontent', 'true');
     s.setAttribute('data-lp-id', 'nexoquote-auto-us');
     s.setAttribute('data-lp-name', 'Nexo Quote Auto US');
     document.head.appendChild(s);
@@ -1560,7 +1559,9 @@ h1,h2,h3{ font-family:var(--font-display); }
 
     // Tout ce qui suit est invisible pour l'utilisateur : ça attend la peinture.
     afterPaint(function () {
-      tk('trackClickButton', {
+      var eventType = step === 1 ? 'quiz_started' : 'quiz_q' + step;
+      tk('registerConversion', {
+        eventType: eventType,
         step: step,
         answer: btn.dataset.answer,
         state: stateName || undefined,
@@ -1670,12 +1671,6 @@ h1,h2,h3{ font-family:var(--font-display); }
     if (resultEl) resultEl.classList.add('active');
     applyResultMode();
     if (isPhoneEligible()) afterPaint(armStickyCta);
-
-    var payload = { eventType: 'lead', state: stateName || undefined };
-    for (var k in answers) if (Object.prototype.hasOwnProperty.call(answers, k)) payload[k] = answers[k];
-    afterPaint(function () {
-      tk('registerConversion', payload);
-    });
   }
 
   function sendLeadToSheet(meta) {
@@ -1738,7 +1733,7 @@ h1,h2,h3{ font-family:var(--font-display); }
 
       afterPaint(function () {
         var meta = {
-          eventType: 'callback_request',
+          eventType: 'lead',
           state: stateName || undefined,
           phone: lead.phone,
           zip: lead.zip,
