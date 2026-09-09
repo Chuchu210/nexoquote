@@ -16,7 +16,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
 <link rel="apple-touch-icon" href="assets/logo.svg" />
-<script defer src="https://track.nexoquote.com/t/tracker.js" data-campaign="lp1" data-mode="direct" data-no-viewcontent="true" data-lp-id="nexoquote-auto-us"></script>
+<script defer src="https://track.nexoquote.com/t/tracker.js" data-campaign="lp1" data-mode="direct" data-no-viewcontent="true" data-lp-id="nexoquote-auto-us" data-lp-name="Nexo Quote Auto US"></script>
 <script>
 (function () {
   var loaded = false;
@@ -541,11 +541,16 @@
       grid-template-rows:auto 1fr;
       column-gap:clamp(28px,4vw,58px); row-gap:0;
       padding:76px var(--gutter) 72px;
-      align-items:start;
+      align-items:stretch;
     }
+    .hero-copy, .hero-media{ align-self:start; }
     .hero-copy { grid-area:copy; }
-    .quiz-wrap { grid-area:quiz; }
+    .quiz-wrap { grid-area:quiz; min-height:100%; }
     .hero-media{ grid-area:media; margin-top:28px; }
+    /* Planche : la carte colle sous le header (`top:84px`) pendant que
+       la colonne gauche defile. Le wrap doit etre plus haut que la carte,
+       sinon sticky n'a nulle part ou voyager. */
+    .quiz{ position:sticky; top:84px; }
   }
 
   /* La gelule de surtitre. Sur la planche : 152 x 31, rayon 999, fond violet,
@@ -639,10 +644,6 @@
     content:''; position:absolute; top:0; left:0; right:0; height:4px;
     background:var(--grad-rail);
   }
-  /* La planche colle la carte (`position:sticky; top:84px`). Retire : a
-     l'usage elle s'accroche puis se decolle au fil du defilement, ce qui donne
-     l'a-coup signale. Une carte qui reste dans le flux ne saute jamais. */
-
   .quiz-top{
     display:flex; align-items:center; justify-content:space-between; gap:12px;
     font-size:var(--fs-150); font-weight:600; color:var(--ink-soft);
