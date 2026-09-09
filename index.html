@@ -547,10 +547,6 @@
     .hero-copy { grid-area:copy; }
     .quiz-wrap { grid-area:quiz; min-height:100%; }
     .hero-media{ grid-area:media; margin-top:28px; }
-    /* Planche : la carte colle sous le header (`top:84px`) pendant que
-       la colonne gauche defile. Le wrap doit etre plus haut que la carte,
-       sinon sticky n'a nulle part ou voyager. */
-    .quiz{ position:sticky; top:84px; }
   }
 
   /* La gelule de surtitre. Sur la planche : 152 x 31, rayon 999, fond violet,
@@ -643,6 +639,11 @@
   .quiz::before{
     content:''; position:absolute; top:0; left:0; right:0; height:4px;
     background:var(--grad-rail);
+  }
+  /* Apres `.quiz{ position:relative }` : une sticky plus haut dans le fichier
+     se faisait ecraser et la carte ne collait jamais. */
+  @media (min-width:900px){
+    .quiz{ position:sticky; top:84px; }
   }
   .quiz-top{
     display:flex; align-items:center; justify-content:space-between; gap:12px;
